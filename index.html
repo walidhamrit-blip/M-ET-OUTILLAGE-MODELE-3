@@ -1,0 +1,4318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#122b3f">
+  <meta name="description" content="TOOLIX Libya — hardware, power tools, workshop equipment, safety products and garden machinery delivered across Tripoli, Libya.">
+  <title>TOOLIX Libya | أدوات ومعدات في طرابلس</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root {
+      --navy: #122b3f;
+      --navy-2: #0b2030;
+      --red: #e30613;
+      --red-dark: #bd0712;
+      --yellow: #ffd600;
+      --green: #22a85a;
+      --cyan: #1baab8;
+      --orange: #f18429;
+      --muted: #6d7780;
+      --line: #d9dee2;
+      --surface: #fff;
+      --bg: #f4f5f6;
+      --shadow: 0 5px 18px rgba(15, 35, 50, .12);
+      --radius: 7px;
+      --container: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 154px;
+    }
+
+    body {
+      margin: 0;
+      color: #1d2730;
+      background: var(--bg);
+      font-family: "Cairo", "Inter", Arial, sans-serif;
+      font-size: 14px;
+      overflow-x: hidden;
+    }
+
+    html[dir="ltr"] body,
+    html[dir="ltr"] button,
+    html[dir="ltr"] input,
+    html[dir="ltr"] select,
+    html[dir="ltr"] textarea {
+      font-family: "Inter", "Cairo", Arial, sans-serif;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      border: 0;
+      cursor: pointer;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 28px));
+      margin-inline: auto;
+    }
+
+    .top-offer {
+      min-height: 39px;
+      background: linear-gradient(90deg, #c6000d, #ed0011 55%, #bd000a);
+      color: white;
+      font-weight: 800;
+    }
+
+    .top-offer .container {
+      min-height: 39px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      text-align: center;
+    }
+
+    .top-offer strong {
+      color: var(--yellow);
+      font-size: 16px;
+    }
+
+    .offer-countdown {
+      display: inline-flex;
+      gap: 4px;
+      direction: ltr;
+    }
+
+    .offer-countdown b {
+      min-width: 25px;
+      padding: 2px 5px;
+      border-radius: 3px;
+      color: #151515;
+      background: #fff;
+      font-size: 12px;
+    }
+
+    .utility-bar {
+      min-height: 33px;
+      color: #d7e0e6;
+      background: var(--navy-2);
+      font-size: 11px;
+    }
+
+    .utility-inner {
+      min-height: 33px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .utility-links,
+    .utility-contact {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .utility-bar a,
+    .utility-bar button {
+      color: #d7e0e6;
+      background: transparent;
+      padding: 0;
+    }
+
+    .utility-bar a:hover,
+    .utility-bar button:hover {
+      color: white;
+    }
+
+    .utility-bar i {
+      color: #ff5963;
+      margin-inline-end: 5px;
+    }
+
+    .header-stack {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 13px rgba(0, 0, 0, .14);
+    }
+
+    .main-header {
+      background: #fff;
+    }
+
+    .header-inner {
+      min-height: 79px;
+      display: grid;
+      grid-template-columns: 205px minmax(320px, 1fr) auto;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .logo {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: white;
+      background: linear-gradient(135deg, var(--red), #b9000b);
+      padding: 7px 13px;
+      transform: skew(-6deg);
+      box-shadow: 4px 4px 0 #172d3f;
+      border-radius: 2px;
+    }
+
+    .logo > * {
+      transform: skew(6deg);
+    }
+
+    .logo-mark {
+      font-size: 27px;
+      line-height: 1;
+    }
+
+    .logo-main {
+      display: block;
+      font-family: "Inter", sans-serif;
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 900;
+      letter-spacing: -1.3px;
+      line-height: 1;
+    }
+
+    .logo-sub {
+      display: block;
+      margin-top: 3px;
+      font-size: 9px;
+      font-weight: 700;
+      opacity: .88;
+      letter-spacing: .2px;
+    }
+
+    .search-wrap {
+      position: relative;
+    }
+
+    .search-form {
+      height: 45px;
+      display: grid;
+      grid-template-columns: 135px 1fr 52px;
+      border: 2px solid var(--navy);
+      border-radius: 5px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .search-form select {
+      width: 100%;
+      padding-inline: 9px;
+      color: #273641;
+      border: 0;
+      border-inline-end: 1px solid #d6dce0;
+      background: #f4f6f7;
+      outline: 0;
+      font-size: 11px;
+    }
+
+    .search-form input {
+      min-width: 0;
+      padding-inline: 16px;
+      border: 0;
+      outline: 0;
+      color: #18242d;
+      background: white;
+    }
+
+    .search-form button {
+      color: white;
+      background: var(--red);
+      font-size: 17px;
+      transition: background .2s, transform .2s;
+    }
+
+    .search-form button:hover {
+      background: var(--red-dark);
+    }
+
+    .search-form button:active {
+      transform: scale(.94);
+    }
+
+    .search-suggestions {
+      position: absolute;
+      z-index: 1010;
+      top: calc(100% + 5px);
+      inset-inline: 0;
+      display: none;
+      overflow: hidden;
+      color: #26333c;
+      background: white;
+      border: 1px solid #dbe0e3;
+      border-radius: 5px;
+      box-shadow: var(--shadow);
+    }
+
+    .search-suggestions.active {
+      display: block;
+    }
+
+    .suggestion-item {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 44px 1fr auto;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 11px;
+      text-align: start;
+      color: inherit;
+      background: white;
+      border-bottom: 1px solid #edf0f2;
+    }
+
+    .suggestion-item:last-child {
+      border-bottom: 0;
+    }
+
+    .suggestion-item:hover {
+      background: #f7f9fa;
+    }
+
+    .suggestion-item img {
+      width: 44px;
+      height: 36px;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+
+    .suggestion-item span {
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .suggestion-item b {
+      color: var(--red);
+      font-size: 12px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: stretch;
+      gap: 7px;
+    }
+
+    .head-action {
+      position: relative;
+      min-width: 70px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2px;
+      padding: 5px 7px;
+      color: #263845;
+      background: transparent;
+      border-radius: 4px;
+      transition: color .2s, background .2s;
+    }
+
+    .head-action:hover {
+      color: var(--red);
+      background: #f5f6f7;
+    }
+
+    .head-action i {
+      font-size: 20px;
+    }
+
+    .head-action span:not(.action-count) {
+      white-space: nowrap;
+      font-size: 9px;
+      font-weight: 700;
+    }
+
+    .action-count {
+      position: absolute;
+      top: 0;
+      inset-inline-end: 9px;
+      min-width: 17px;
+      height: 17px;
+      display: grid;
+      place-items: center;
+      padding: 0 4px;
+      color: white;
+      background: var(--red);
+      border: 2px solid white;
+      border-radius: 20px;
+      font-size: 9px;
+      font-weight: 800;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      color: white;
+      background: var(--navy);
+      border-radius: 4px;
+      font-size: 19px;
+    }
+
+    .category-nav {
+      color: white;
+      background: var(--navy);
+    }
+
+    .nav-inner {
+      position: relative;
+      min-height: 43px;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .all-categories {
+      min-width: 205px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: white;
+      background: var(--red);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .all-categories:hover,
+    .all-categories.active {
+      background: var(--red-dark);
+    }
+
+    .main-nav {
+      flex: 1;
+      display: flex;
+      align-items: stretch;
+      overflow: hidden;
+    }
+
+    .main-nav a {
+      flex: 1;
+      min-width: max-content;
+      display: grid;
+      place-items: center;
+      padding: 0 12px;
+      color: #fff;
+      border-inline-end: 1px solid rgba(255, 255, 255, .1);
+      font-size: 11px;
+      font-weight: 700;
+      transition: background .2s;
+    }
+
+    .main-nav a:hover,
+    .main-nav a.active {
+      background: #213f56;
+    }
+
+    .nav-sale {
+      color: #161616 !important;
+      background: var(--yellow);
+    }
+
+    .nav-sale:hover {
+      background: #f0c900 !important;
+    }
+
+    .mega-menu {
+      position: absolute;
+      z-index: 1005;
+      top: 43px;
+      inset-inline-start: 0;
+      width: min(820px, 92vw);
+      display: none;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      padding: 16px;
+      color: #22313b;
+      background: white;
+      border-top: 3px solid var(--red);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
+    }
+
+    .mega-menu.active {
+      display: grid;
+    }
+
+    .mega-group {
+      padding: 7px 16px;
+      border-inline-end: 1px solid #e3e7e9;
+    }
+
+    .mega-group:last-child {
+      border: 0;
+    }
+
+    .mega-group h4 {
+      margin: 0 0 8px;
+      color: var(--red);
+      font-size: 12px;
+    }
+
+    .mega-group button {
+      width: 100%;
+      display: block;
+      padding: 5px 0;
+      text-align: start;
+      color: #51606a;
+      background: transparent;
+      font-size: 11px;
+    }
+
+    .mega-group button:hover {
+      color: var(--red);
+      transform: translateX(-2px);
+    }
+
+    html[dir="ltr"] .mega-group button:hover {
+      transform: translateX(2px);
+    }
+
+    .mobile-drawer {
+      position: fixed;
+      z-index: 1300;
+      top: 0;
+      bottom: 0;
+      inset-inline-start: 0;
+      width: min(340px, 88vw);
+      overflow-y: auto;
+      color: #25333d;
+      background: white;
+      box-shadow: 0 0 35px rgba(0, 0, 0, .25);
+      transform: translateX(110%);
+      transition: transform .3s ease;
+    }
+
+    html[dir="ltr"] .mobile-drawer {
+      transform: translateX(-110%);
+    }
+
+    .mobile-drawer.open {
+      transform: translateX(0);
+    }
+
+    .mobile-head {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 13px 17px;
+      color: white;
+      background: var(--navy);
+    }
+
+    .mobile-head strong {
+      font-size: 19px;
+    }
+
+    .mobile-head button {
+      width: 38px;
+      height: 38px;
+      color: white;
+      background: rgba(255, 255, 255, .1);
+      border-radius: 50%;
+    }
+
+    .mobile-links {
+      padding: 8px 0;
+    }
+
+    .mobile-links a,
+    .mobile-links button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px 18px;
+      text-align: start;
+      color: #283842;
+      background: white;
+      border-bottom: 1px solid #edf0f2;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .mobile-links i {
+      width: 22px;
+      color: var(--red);
+      text-align: center;
+    }
+
+    .drawer-overlay {
+      position: fixed;
+      z-index: 1200;
+      inset: 0;
+      display: none;
+      background: rgba(5, 16, 25, .58);
+      backdrop-filter: blur(2px);
+    }
+
+    .drawer-overlay.active {
+      display: block;
+    }
+
+    main {
+      min-height: 1000px;
+    }
+
+    .hero-area {
+      padding-top: 13px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2.1fr) minmax(280px, .9fr);
+      gap: 10px;
+    }
+
+    .hero-slider {
+      position: relative;
+      min-height: 440px;
+      overflow: hidden;
+      background: #182d3c;
+      border-radius: 3px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      padding: clamp(28px, 5vw, 65px);
+      color: white;
+      background-position: center;
+      background-size: cover;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.02);
+      transition: opacity .55s, transform .7s, visibility .55s;
+    }
+
+    .hero-slide::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(5, 16, 24, .91) 0%, rgba(7, 22, 33, .74) 48%, rgba(7, 15, 22, .14) 100%);
+    }
+
+    html[dir="rtl"] .hero-slide::before {
+      background: linear-gradient(270deg, rgba(5, 16, 24, .91) 0%, rgba(7, 22, 33, .74) 48%, rgba(7, 15, 22, .14) 100%);
+    }
+
+    .hero-slide.active {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: min(535px, 77%);
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 10px;
+      padding: 5px 10px;
+      color: #1c1c1c;
+      background: var(--yellow);
+      border-radius: 3px;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .hero-content h1 {
+      margin: 0;
+      font-size: clamp(29px, 4vw, 54px);
+      font-weight: 900;
+      line-height: 1.12;
+      letter-spacing: -.6px;
+    }
+
+    .hero-content p {
+      max-width: 470px;
+      margin: 13px 0 21px;
+      color: #e6edf1;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .hero-price {
+      margin-bottom: 17px;
+      color: var(--yellow);
+      font-size: 31px;
+      font-weight: 900;
+    }
+
+    .hero-price small {
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .primary-btn,
+    .dark-btn,
+    .outline-btn {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 9px 19px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 800;
+      transition: transform .2s, background .2s, color .2s;
+    }
+
+    .primary-btn {
+      color: white;
+      background: var(--red);
+    }
+
+    .primary-btn:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+    }
+
+    .dark-btn {
+      color: white;
+      background: var(--navy);
+    }
+
+    .dark-btn:hover {
+      background: #1c425e;
+      transform: translateY(-2px);
+    }
+
+    .outline-btn {
+      color: white;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, .65);
+    }
+
+    .outline-btn:hover {
+      color: #151515;
+      background: white;
+    }
+
+    .hero-controls {
+      position: absolute;
+      z-index: 5;
+      bottom: 16px;
+      inset-inline: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .hero-arrows {
+      display: flex;
+      gap: 6px;
+      pointer-events: auto;
+    }
+
+    .hero-arrow {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: rgba(9, 27, 40, .74);
+      border: 1px solid rgba(255, 255, 255, .28);
+      border-radius: 2px;
+    }
+
+    .hero-arrow:hover {
+      background: var(--red);
+    }
+
+    .hero-dots {
+      display: flex;
+      gap: 6px;
+      pointer-events: auto;
+    }
+
+    .hero-dot {
+      width: 9px;
+      height: 9px;
+      padding: 0;
+      background: rgba(255, 255, 255, .55);
+      border-radius: 50%;
+    }
+
+    .hero-dot.active {
+      width: 25px;
+      background: var(--red);
+      border-radius: 10px;
+    }
+
+    .hero-side {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .side-offer {
+      position: relative;
+      min-height: 215px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      padding: 22px;
+      color: white;
+      background-position: center;
+      background-size: cover;
+      border-radius: 3px;
+      box-shadow: var(--shadow);
+    }
+
+    .side-offer::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(3, 14, 21, .95), rgba(7, 17, 25, .05) 72%);
+    }
+
+    .side-offer-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .side-offer small {
+      display: inline-block;
+      margin-bottom: 3px;
+      color: var(--yellow);
+      font-weight: 800;
+    }
+
+    .side-offer h2 {
+      margin: 0 0 8px;
+      font-size: 23px;
+      line-height: 1.2;
+    }
+
+    .side-offer strong {
+      color: var(--yellow);
+      font-size: 21px;
+    }
+
+    .side-offer button {
+      margin-inline-start: 8px;
+      padding: 6px 9px;
+      color: white;
+      background: var(--red);
+      border-radius: 2px;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .benefits {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      color: white;
+      background: var(--navy);
+      border-radius: 3px;
+    }
+
+    .benefit {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      padding: 10px 17px;
+      border-inline-end: 1px solid rgba(255, 255, 255, .13);
+    }
+
+    .benefit:last-child {
+      border: 0;
+    }
+
+    .benefit i {
+      color: var(--yellow);
+      font-size: 25px;
+    }
+
+    .benefit strong,
+    .benefit small {
+      display: block;
+    }
+
+    .benefit strong {
+      font-size: 12px;
+    }
+
+    .benefit small {
+      margin-top: 2px;
+      color: #cbd7de;
+      font-size: 9px;
+    }
+
+    .section-block {
+      margin-top: 18px;
+      padding: 17px 0 0;
+      background: white;
+      border: 1px solid #e0e4e6;
+      box-shadow: 0 2px 8px rgba(30, 45, 55, .04);
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      margin: 0 18px 14px;
+    }
+
+    .section-heading::before,
+    .section-heading::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      background: #7e868c;
+    }
+
+    .section-heading-content {
+      flex: 0 0 auto;
+      text-align: center;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      color: #27333d;
+      font-size: 18px;
+      font-weight: 900;
+    }
+
+    .section-heading p {
+      margin: 2px 0 0;
+      color: #899198;
+      font-size: 9px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 8px;
+      padding: 0 14px 17px;
+    }
+
+    .category-card {
+      min-height: 132px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 10px 5px;
+      color: #284052;
+      background: #f7f8f9;
+      border: 1px solid #e3e7e9;
+      border-radius: 4px;
+      transition: transform .2s, border-color .2s, box-shadow .2s;
+    }
+
+    .category-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--red);
+      box-shadow: 0 7px 16px rgba(28, 44, 54, .11);
+    }
+
+    .category-icon {
+      width: 64px;
+      height: 64px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(145deg, var(--navy), #315c78);
+      border-radius: 50%;
+      font-size: 27px;
+      box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .08);
+    }
+
+    .category-card:nth-child(2n) .category-icon {
+      background: linear-gradient(145deg, var(--red), #a9000b);
+    }
+
+    .category-card span {
+      font-size: 10px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .sale-banner {
+      position: relative;
+      min-height: 185px;
+      display: flex;
+      align-items: center;
+      margin-top: 18px;
+      overflow: hidden;
+      padding: 28px 42px;
+      color: white;
+      background-position: center;
+      background-size: cover;
+      box-shadow: var(--shadow);
+    }
+
+    .sale-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(9, 25, 36, .97), rgba(9, 25, 36, .79) 49%, rgba(9, 25, 36, .16));
+    }
+
+    html[dir="rtl"] .sale-banner::before {
+      background: linear-gradient(270deg, rgba(9, 25, 36, .97), rgba(9, 25, 36, .79) 49%, rgba(9, 25, 36, .16));
+    }
+
+    .sale-banner.red::before {
+      background: linear-gradient(90deg, rgba(181, 0, 12, .97), rgba(198, 0, 13, .78) 50%, rgba(12, 15, 18, .18));
+    }
+
+    html[dir="rtl"] .sale-banner.red::before {
+      background: linear-gradient(270deg, rgba(181, 0, 12, .97), rgba(198, 0, 13, .78) 50%, rgba(12, 15, 18, .18));
+    }
+
+    .sale-banner.green::before {
+      background: linear-gradient(90deg, rgba(18, 74, 46, .97), rgba(22, 104, 63, .78) 50%, rgba(12, 15, 18, .15));
+    }
+
+    html[dir="rtl"] .sale-banner.green::before {
+      background: linear-gradient(270deg, rgba(18, 74, 46, .97), rgba(22, 104, 63, .78) 50%, rgba(12, 15, 18, .15));
+    }
+
+    .banner-content {
+      position: relative;
+      z-index: 2;
+      max-width: 560px;
+    }
+
+    .banner-content small {
+      color: var(--yellow);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .banner-content h2 {
+      margin: 4px 0 2px;
+      font-size: clamp(29px, 4vw, 48px);
+      line-height: 1.1;
+    }
+
+    .banner-content p {
+      margin: 7px 0 14px;
+      color: #e7edf0;
+      font-size: 13px;
+    }
+
+    .banner-discount {
+      color: var(--yellow);
+      font-size: 31px;
+      font-weight: 900;
+    }
+
+    .product-section {
+      margin-top: 18px;
+      padding: 13px 0 0;
+      overflow: hidden;
+      background: white;
+      border: 1px solid #dfe3e5;
+    }
+
+    .product-topbar {
+      min-height: 39px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: -13px 0 13px;
+      padding: 0 14px;
+      color: #172b39;
+      background: #e8ecef;
+      border-bottom: 1px solid #d5dce0;
+    }
+
+    .product-topbar.red {
+      color: white;
+      background: var(--red);
+    }
+
+    .product-topbar.cyan {
+      background: #84d7d6;
+    }
+
+    .product-topbar.orange {
+      background: #ff8549;
+    }
+
+    .product-topbar.green {
+      background: #9fc958;
+    }
+
+    .product-topbar.purple {
+      background: #d594d2;
+    }
+
+    .product-topbar h2 {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .view-all {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: inherit;
+      background: transparent;
+      font-size: 9px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .carousel-shell {
+      position: relative;
+    }
+
+    .product-track {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 0 12px 14px;
+      direction: ltr;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+      scroll-snap-type: x proximity;
+    }
+
+    .product-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .product-card {
+      position: relative;
+      flex: 0 0 calc((100% - 32px) / 5);
+      min-width: 205px;
+      min-height: 365px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      color: #23313a;
+      background: white;
+      border: 1px solid #d9dee1;
+      box-shadow: 0 2px 3px rgba(31, 45, 53, .08);
+      scroll-snap-align: start;
+      transition: border-color .2s, transform .2s, box-shadow .2s;
+    }
+
+    html[dir="rtl"] .product-card {
+      direction: rtl;
+    }
+
+    html[dir="ltr"] .product-card {
+      direction: ltr;
+    }
+
+    .product-card:hover {
+      z-index: 2;
+      transform: translateY(-3px);
+      border-color: #aeb7bd;
+      box-shadow: 0 8px 20px rgba(28, 43, 52, .13);
+    }
+
+    .discount-badge {
+      position: absolute;
+      z-index: 3;
+      top: 8px;
+      inset-inline-start: 8px;
+      min-width: 42px;
+      padding: 4px 6px;
+      color: white;
+      background: var(--red);
+      border-radius: 2px;
+      font-size: 10px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .stock-badge {
+      position: absolute;
+      z-index: 3;
+      top: 8px;
+      inset-inline-end: 8px;
+      padding: 4px 6px;
+      color: #177b43;
+      background: #dff6e9;
+      border-radius: 2px;
+      font-size: 8px;
+      font-weight: 800;
+    }
+
+    .fav-btn {
+      position: absolute;
+      z-index: 4;
+      top: 38px;
+      inset-inline-end: 8px;
+      width: 31px;
+      height: 31px;
+      display: grid;
+      place-items: center;
+      color: #7c888f;
+      background: rgba(255, 255, 255, .95);
+      border: 1px solid #dce1e4;
+      border-radius: 50%;
+      opacity: 0;
+      transform: translateY(-5px);
+      transition: opacity .2s, transform .2s, color .2s;
+    }
+
+    .product-card:hover .fav-btn,
+    .fav-btn.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fav-btn.active {
+      color: var(--red);
+    }
+
+    .product-image {
+      position: relative;
+      height: 173px;
+      overflow: hidden;
+      background: #f4f6f7;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s;
+    }
+
+    .product-card:hover .product-image img {
+      transform: scale(1.055);
+    }
+
+    .quick-view {
+      position: absolute;
+      z-index: 3;
+      bottom: 9px;
+      left: 50%;
+      width: max-content;
+      padding: 7px 12px;
+      color: white;
+      background: rgba(18, 43, 63, .92);
+      border-radius: 2px;
+      font-size: 9px;
+      font-weight: 800;
+      opacity: 0;
+      transform: translate(-50%, 10px);
+      transition: opacity .2s, transform .2s;
+    }
+
+    .product-card:hover .quick-view {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    .product-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 9px 10px 10px;
+    }
+
+    .product-brand {
+      min-height: 17px;
+      color: var(--navy);
+      font-family: "Inter", sans-serif;
+      font-size: 11px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .product-title {
+      min-height: 39px;
+      margin: 3px 0 2px;
+      overflow: hidden;
+      color: #303d46;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 2px;
+      color: #f3ae00;
+      font-size: 9px;
+    }
+
+    .rating span {
+      color: #8a9399;
+      font-size: 8px;
+    }
+
+    .price-row {
+      min-height: 53px;
+      display: flex;
+      align-items: end;
+      gap: 7px;
+      margin-top: auto;
+      padding-top: 7px;
+    }
+
+    .current-price {
+      color: #c9000d;
+      font-family: "Cairo", "Inter", sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      line-height: 1.05;
+      white-space: nowrap;
+    }
+
+    .current-price small {
+      font-size: 9px;
+    }
+
+    .old-price {
+      color: #333;
+      font-size: 10px;
+      text-decoration: line-through;
+    }
+
+    .card-bottom {
+      display: flex;
+      gap: 6px;
+      margin-top: 7px;
+    }
+
+    .add-to-cart {
+      flex: 1;
+      min-height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: white;
+      background: var(--red);
+      border-radius: 2px;
+      font-size: 9px;
+      font-weight: 800;
+    }
+
+    .add-to-cart:hover {
+      background: var(--red-dark);
+    }
+
+    .compare-btn {
+      width: 35px;
+      min-width: 35px;
+      color: #42535e;
+      background: #edf0f2;
+      border-radius: 2px;
+    }
+
+    .compare-btn.active {
+      color: white;
+      background: var(--navy);
+    }
+
+    .carousel-btn {
+      position: absolute;
+      z-index: 8;
+      top: 44%;
+      width: 37px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      color: #44545e;
+      background: rgba(255, 255, 255, .94);
+      border: 1px solid #d7dde0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, .09);
+      font-size: 17px;
+    }
+
+    .carousel-btn:hover {
+      color: white;
+      background: var(--red);
+    }
+
+    .carousel-prev {
+      left: 0;
+    }
+
+    .carousel-next {
+      right: 0;
+    }
+
+    .promo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .promo-card {
+      position: relative;
+      min-height: 230px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 28px;
+      color: white;
+      background-position: center;
+      background-size: cover;
+      box-shadow: var(--shadow);
+    }
+
+    .promo-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(10, 27, 40, .93), rgba(10, 27, 40, .62), rgba(10, 27, 40, .1));
+    }
+
+    html[dir="rtl"] .promo-card::before {
+      background: linear-gradient(270deg, rgba(10, 27, 40, .93), rgba(10, 27, 40, .62), rgba(10, 27, 40, .1));
+    }
+
+    .promo-card.red::before {
+      background: linear-gradient(90deg, rgba(194, 0, 13, .95), rgba(194, 0, 13, .62), rgba(10, 15, 20, .08));
+    }
+
+    html[dir="rtl"] .promo-card.red::before {
+      background: linear-gradient(270deg, rgba(194, 0, 13, .95), rgba(194, 0, 13, .62), rgba(10, 15, 20, .08));
+    }
+
+    .promo-content {
+      position: relative;
+      z-index: 2;
+      max-width: 310px;
+    }
+
+    .promo-content h3 {
+      margin: 0 0 7px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    .promo-content p {
+      margin: 0 0 13px;
+      color: #e2e9ed;
+      font-size: 11px;
+    }
+
+    .promo-price {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--yellow);
+      font-size: 28px;
+      font-weight: 900;
+    }
+
+    .mini-category-row {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1px;
+      padding: 0 10px 13px;
+      background: white;
+    }
+
+    .mini-category {
+      min-height: 116px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px;
+      color: #324652;
+      background: #f7f8f9;
+      border: 1px solid #e5e8ea;
+    }
+
+    .mini-category:hover {
+      color: var(--red);
+      border-color: #bfc8cd;
+    }
+
+    .mini-category i {
+      font-size: 29px;
+    }
+
+    .mini-category span {
+      font-size: 9px;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .brand-strip {
+      margin-top: 18px;
+      padding: 16px 18px;
+      overflow: hidden;
+      background: white;
+      border: 1px solid #e0e4e6;
+    }
+
+    .brand-row {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      align-items: center;
+      gap: 8px;
+    }
+
+    .brand-btn {
+      min-height: 64px;
+      display: grid;
+      place-items: center;
+      padding: 6px;
+      color: #33454f;
+      background: #f8f9fa;
+      border: 1px solid #e4e8ea;
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-weight: 900;
+      transition: color .2s, border-color .2s, transform .2s;
+    }
+
+    .brand-btn:hover {
+      color: var(--red);
+      border-color: var(--red);
+      transform: translateY(-2px);
+    }
+
+    .service-banner {
+      min-height: 145px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 18px;
+      overflow: hidden;
+      color: white;
+      background: var(--navy);
+      box-shadow: var(--shadow);
+    }
+
+    .service-main {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      padding: 25px 35px;
+      background: linear-gradient(135deg, #ffd923, #f7b900);
+      color: #172834;
+    }
+
+    .service-main i {
+      color: var(--red);
+      font-size: 60px;
+    }
+
+    .service-main h2,
+    .service-contact h2 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    .service-main p,
+    .service-contact p {
+      margin: 5px 0 0;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .service-contact {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 25px 35px;
+      background: linear-gradient(135deg, #153a4d, #082b39);
+    }
+
+    .service-contact .primary-btn {
+      white-space: nowrap;
+    }
+
+    .directory-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      padding: 0 14px 18px;
+    }
+
+    .directory-card {
+      min-height: 185px;
+      padding: 17px;
+      background: #fafafa;
+      border: 1px solid #e1e5e7;
+    }
+
+    .directory-card-head {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--red);
+    }
+
+    .directory-card-head i {
+      color: var(--red);
+      font-size: 25px;
+    }
+
+    .directory-card h3 {
+      margin: 0;
+      color: #2c3b44;
+      font-size: 13px;
+    }
+
+    .directory-card button {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 5px 0;
+      text-align: start;
+      color: #65727a;
+      background: transparent;
+      font-size: 10px;
+    }
+
+    .directory-card button:hover {
+      color: var(--red);
+    }
+
+    .store-section {
+      margin-top: 18px;
+      padding: 20px 0;
+      background: white;
+      border: 1px solid #e0e4e6;
+    }
+
+    .store-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 13px;
+      padding: 0 18px;
+    }
+
+    .store-card {
+      position: relative;
+      min-height: 190px;
+      overflow: hidden;
+      padding: 18px 18px 16px 112px;
+      color: #42525c;
+      background: #f1f2f3;
+      border: 1px solid #d9dfe2;
+      box-shadow: 0 3px 7px rgba(36, 48, 55, .08);
+    }
+
+    html[dir="rtl"] .store-card {
+      padding: 18px 112px 16px 18px;
+    }
+
+    .store-image {
+      position: absolute;
+      top: 18px;
+      left: 16px;
+      width: 78px;
+      height: 78px;
+      overflow: hidden;
+      border: 3px solid var(--red);
+      border-radius: 50%;
+    }
+
+    html[dir="rtl"] .store-image {
+      left: auto;
+      right: 16px;
+    }
+
+    .store-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .store-card h3 {
+      margin: 0 0 6px;
+      color: #178eb8;
+      font-size: 13px;
+    }
+
+    .store-card p {
+      margin: 4px 0;
+      font-size: 9px;
+      line-height: 1.6;
+    }
+
+    .store-card i {
+      width: 15px;
+      color: var(--red);
+    }
+
+    .map-btn {
+      margin-top: 7px;
+      padding: 6px 10px;
+      color: white;
+      background: var(--navy);
+      border-radius: 2px;
+      font-size: 9px;
+      font-weight: 800;
+    }
+
+    .map-btn:hover {
+      background: var(--red);
+    }
+
+    .about-box {
+      margin-top: 18px;
+      padding: 25px 38px;
+      text-align: center;
+      color: #5c6971;
+      background: #fff;
+      border: 1px solid #e1e5e7;
+      font-size: 11px;
+      line-height: 1.9;
+    }
+
+    .about-box strong {
+      color: var(--navy);
+    }
+
+    .social-band {
+      margin-top: 26px;
+      padding: 15px 0;
+      background: #c8cacc;
+    }
+
+    .social-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .social-row a {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: var(--navy);
+      border-radius: 50%;
+      font-size: 19px;
+      transition: transform .2s;
+    }
+
+    .social-row a:hover {
+      transform: translateY(-3px);
+    }
+
+    .social-row a:nth-child(1) { background: #1877f2; }
+    .social-row a:nth-child(2) { background: #d62976; }
+    .social-row a:nth-child(3) { background: #ff0000; }
+    .social-row a:nth-child(4) { background: #111; }
+    .social-row a:nth-child(5) { background: #0a66c2; }
+
+    footer {
+      color: #323d44;
+      background: #dfe1e3;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.25fr 1.5fr;
+      gap: 35px;
+      padding: 30px 0;
+    }
+
+    .footer-col h3 {
+      margin: 0 0 13px;
+      color: #111d25;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .footer-col a,
+    .footer-col p {
+      display: block;
+      margin: 7px 0;
+      color: #56636b;
+      font-size: 10px;
+      line-height: 1.65;
+    }
+
+    .footer-col a:hover {
+      color: var(--red);
+    }
+
+    .footer-contact i {
+      width: 20px;
+      color: var(--red);
+    }
+
+    .newsletter-form {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .newsletter-form input {
+      min-width: 0;
+      flex: 1;
+      height: 38px;
+      padding: 0 11px;
+      border: 1px solid #bfc6ca;
+      outline: 0;
+    }
+
+    .newsletter-form input:focus {
+      border-color: var(--red);
+    }
+
+    .newsletter-form button {
+      padding: 0 15px;
+      color: white;
+      background: var(--green);
+      font-size: 9px;
+      font-weight: 800;
+    }
+
+    .payment-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+
+    .payment-icons span {
+      padding: 4px 8px;
+      color: #263a48;
+      background: white;
+      border: 1px solid #bcc5ca;
+      border-radius: 2px;
+      font-family: "Inter", sans-serif;
+      font-size: 9px;
+      font-weight: 900;
+    }
+
+    .footer-benefits {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-top: 1px solid #c6cbce;
+      background: #eef0f1;
+    }
+
+    .footer-benefit {
+      min-height: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      text-align: center;
+      border-inline-end: 1px solid #d6dade;
+      font-size: 9px;
+      font-weight: 800;
+    }
+
+    .footer-benefit i {
+      width: 39px;
+      height: 39px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: var(--red);
+      border-radius: 50%;
+      font-size: 17px;
+    }
+
+    .copyright {
+      padding: 13px;
+      color: #b8c4cb;
+      background: var(--navy-2);
+      text-align: center;
+      font-size: 9px;
+    }
+
+    .cart-drawer {
+      position: fixed;
+      z-index: 1400;
+      top: 0;
+      bottom: 0;
+      inset-inline-end: 0;
+      width: min(420px, 94vw);
+      display: flex;
+      flex-direction: column;
+      color: #273640;
+      background: white;
+      box-shadow: 0 0 35px rgba(0, 0, 0, .28);
+      transform: translateX(-110%);
+      transition: transform .32s ease;
+    }
+
+    html[dir="ltr"] .cart-drawer {
+      transform: translateX(110%);
+    }
+
+    .cart-drawer.open {
+      transform: translateX(0);
+    }
+
+    .cart-head {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 19px;
+      color: white;
+      background: var(--navy);
+    }
+
+    .cart-head h2 {
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .cart-head button {
+      width: 38px;
+      height: 38px;
+      color: white;
+      background: rgba(255, 255, 255, .1);
+      border-radius: 50%;
+    }
+
+    .cart-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 12px;
+    }
+
+    .empty-cart {
+      min-height: 360px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: #818c93;
+    }
+
+    .empty-cart i {
+      display: block;
+      margin-bottom: 13px;
+      font-size: 57px;
+      color: #d3d9dc;
+    }
+
+    .cart-item {
+      display: grid;
+      grid-template-columns: 78px 1fr auto;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid #e4e8ea;
+    }
+
+    .cart-item img {
+      width: 78px;
+      height: 67px;
+      object-fit: cover;
+      border-radius: 3px;
+    }
+
+    .cart-item h4 {
+      margin: 0;
+      font-size: 10px;
+      line-height: 1.5;
+    }
+
+    .cart-item strong {
+      color: var(--red);
+      font-size: 13px;
+    }
+
+    .qty-control {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 6px;
+      border: 1px solid #d4dade;
+    }
+
+    .qty-control button {
+      width: 27px;
+      height: 25px;
+      color: #283a46;
+      background: #edf0f2;
+    }
+
+    .qty-control span {
+      min-width: 29px;
+      text-align: center;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .remove-item {
+      width: 29px;
+      height: 29px;
+      color: #9b1820;
+      background: #ffe6e8;
+      border-radius: 50%;
+    }
+
+    .cart-footer {
+      padding: 16px 18px 20px;
+      border-top: 1px solid #dfe4e6;
+      box-shadow: 0 -5px 15px rgba(0, 0, 0, .04);
+    }
+
+    .cart-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 13px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .cart-total strong {
+      color: var(--red);
+      font-size: 21px;
+    }
+
+    .checkout-btn {
+      width: 100%;
+      min-height: 45px;
+      color: white;
+      background: var(--red);
+      border-radius: 3px;
+      font-weight: 900;
+    }
+
+    .checkout-btn:hover {
+      background: var(--red-dark);
+    }
+
+    .modal-layer {
+      position: fixed;
+      z-index: 1600;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      background: rgba(6, 18, 27, .71);
+      backdrop-filter: blur(3px);
+    }
+
+    .modal-layer.active {
+      display: flex;
+    }
+
+    .modal {
+      width: min(920px, 96vw);
+      max-height: 91vh;
+      overflow: hidden;
+      color: #273640;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .3);
+      animation: modalIn .22s ease;
+    }
+
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(18px) scale(.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .modal-head {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 19px;
+      color: white;
+      background: var(--navy);
+    }
+
+    .modal-head h2 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .modal-head button {
+      width: 36px;
+      height: 36px;
+      color: white;
+      background: rgba(255, 255, 255, .1);
+      border-radius: 50%;
+    }
+
+    .modal-body {
+      max-height: calc(91vh - 58px);
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) 1.15fr;
+      gap: 25px;
+    }
+
+    .quick-image {
+      height: 365px;
+      overflow: hidden;
+      background: #f2f4f5;
+    }
+
+    .quick-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .quick-details .product-brand {
+      color: var(--red);
+      font-size: 14px;
+    }
+
+    .quick-details h3 {
+      margin: 7px 0 10px;
+      font-size: 24px;
+      line-height: 1.35;
+    }
+
+    .quick-details .current-price {
+      display: block;
+      margin: 16px 0 7px;
+      font-size: 34px;
+    }
+
+    .quick-details p {
+      color: #6c787f;
+      line-height: 1.8;
+    }
+
+    .feature-list {
+      margin: 14px 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .feature-list li {
+      margin: 7px 0;
+      color: #4d5e68;
+      font-size: 12px;
+    }
+
+    .feature-list i {
+      color: var(--green);
+      margin-inline-end: 7px;
+    }
+
+    .search-results-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 11px;
+    }
+
+    .search-result-card {
+      overflow: hidden;
+      border: 1px solid #dce1e4;
+      background: white;
+    }
+
+    .search-result-card img {
+      width: 100%;
+      height: 130px;
+      object-fit: cover;
+    }
+
+    .search-result-info {
+      padding: 10px;
+    }
+
+    .search-result-info h4 {
+      min-height: 37px;
+      margin: 0 0 7px;
+      font-size: 10px;
+    }
+
+    .search-result-info strong {
+      color: var(--red);
+    }
+
+    .search-result-info button {
+      width: 100%;
+      margin-top: 8px;
+      padding: 8px;
+      color: white;
+      background: var(--navy);
+      font-size: 9px;
+      font-weight: 800;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+    }
+
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .form-field.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-field label {
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      width: 100%;
+      min-height: 43px;
+      padding: 9px 11px;
+      border: 1px solid #cfd6da;
+      border-radius: 3px;
+      outline: 0;
+    }
+
+    .form-field textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(227, 6, 19, .08);
+    }
+
+    .modal-submit {
+      min-height: 44px;
+      padding: 0 24px;
+      color: white;
+      background: var(--red);
+      border-radius: 3px;
+      font-weight: 900;
+    }
+
+    .order-summary {
+      margin-bottom: 18px;
+      padding: 13px;
+      background: #f2f4f5;
+      border: 1px solid #dce1e4;
+    }
+
+    .order-summary-line {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      font-size: 11px;
+    }
+
+    .order-summary-line.total {
+      margin-top: 5px;
+      padding-top: 10px;
+      border-top: 1px solid #cfd6da;
+      color: var(--red);
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    .success-box {
+      padding: 35px;
+      text-align: center;
+    }
+
+    .success-box i {
+      margin-bottom: 15px;
+      color: var(--green);
+      font-size: 67px;
+    }
+
+    .success-box h3 {
+      margin: 0 0 7px;
+      font-size: 24px;
+    }
+
+    .toast-stack {
+      position: fixed;
+      z-index: 1800;
+      bottom: 22px;
+      inset-inline-start: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .toast {
+      min-width: 270px;
+      max-width: min(390px, calc(100vw - 30px));
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 12px 15px;
+      color: white;
+      background: #17374c;
+      border-inline-start: 4px solid var(--green);
+      box-shadow: 0 9px 25px rgba(0, 0, 0, .22);
+      border-radius: 3px;
+      font-size: 11px;
+      font-weight: 700;
+      animation: toastIn .25s ease;
+    }
+
+    .toast.error {
+      border-color: var(--red);
+    }
+
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .floating-actions {
+      position: fixed;
+      z-index: 900;
+      bottom: 20px;
+      inset-inline-end: 19px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .float-btn {
+      width: 49px;
+      height: 49px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: #25d366;
+      border-radius: 50%;
+      box-shadow: 0 7px 18px rgba(0, 0, 0, .22);
+      font-size: 23px;
+      transition: transform .2s;
+    }
+
+    .float-btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .back-top {
+      display: none;
+      background: var(--navy);
+      font-size: 16px;
+    }
+
+    .back-top.show {
+      display: grid;
+    }
+
+    .no-results {
+      grid-column: 1 / -1;
+      padding: 45px 20px;
+      color: #7d898f;
+      text-align: center;
+    }
+
+    .no-results i {
+      display: block;
+      margin-bottom: 12px;
+      font-size: 48px;
+      color: #c9d0d4;
+    }
+
+    @media (max-width: 1050px) {
+      .header-inner {
+        grid-template-columns: 175px minmax(300px, 1fr) auto;
+        gap: 14px;
+      }
+
+      .logo-main {
+        font-size: 21px;
+      }
+
+      .head-action {
+        min-width: 54px;
+      }
+
+      .head-action span:not(.action-count) {
+        display: none;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .product-card {
+        flex-basis: calc((100% - 24px) / 4);
+      }
+
+      .brand-row {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (max-width: 860px) {
+      html {
+        scroll-padding-top: 126px;
+      }
+
+      .utility-bar {
+        display: none;
+      }
+
+      .header-inner {
+        min-height: 125px;
+        grid-template-columns: 48px 1fr auto;
+        grid-template-rows: 63px 51px;
+        gap: 4px 10px;
+        padding-top: 3px;
+      }
+
+      .mobile-menu-btn {
+        display: grid;
+      }
+
+      .logo {
+        width: 170px;
+        min-height: 43px;
+      }
+
+      .logo-main {
+        font-size: 20px;
+      }
+
+      .search-wrap {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
+
+      .header-actions {
+        justify-content: end;
+      }
+
+      .head-action {
+        min-width: 43px;
+        padding: 4px;
+      }
+
+      .head-action i {
+        font-size: 18px;
+      }
+
+      .action-count {
+        inset-inline-end: 2px;
+      }
+
+      .category-nav {
+        display: none;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-slider {
+        min-height: 400px;
+      }
+
+      .hero-side {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+      }
+
+      .side-offer {
+        min-height: 190px;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .benefit:nth-child(2) {
+        border-inline-end: 0;
+      }
+
+      .benefit:nth-child(-n+2) {
+        border-bottom: 1px solid rgba(255, 255, 255, .13);
+      }
+
+      .product-card {
+        flex-basis: calc((100% - 16px) / 3);
+      }
+
+      .directory-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .store-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .service-banner {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-benefits {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .footer-benefit:nth-child(3) {
+        border: 0;
+      }
+
+      .footer-benefit:nth-child(n+4) {
+        border-top: 1px solid #d6dade;
+      }
+
+      .search-results-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 14px, var(--container));
+      }
+
+      .top-offer .container {
+        gap: 7px;
+        font-size: 10px;
+      }
+
+      .top-offer strong {
+        font-size: 12px;
+      }
+
+      .offer-countdown {
+        display: none;
+      }
+
+      .header-inner {
+        grid-template-columns: 44px 1fr auto;
+      }
+
+      .logo {
+        width: 145px;
+        min-height: 40px;
+        gap: 7px;
+        padding: 6px 9px;
+      }
+
+      .logo-mark {
+        font-size: 20px;
+      }
+
+      .logo-main {
+        font-size: 17px;
+      }
+
+      .logo-sub {
+        font-size: 7px;
+      }
+
+      .header-actions {
+        gap: 0;
+      }
+
+      .head-action {
+        min-width: 37px;
+      }
+
+      .head-action:nth-child(2) {
+        display: none;
+      }
+
+      .search-form {
+        grid-template-columns: 1fr 46px;
+      }
+
+      .search-form select {
+        display: none;
+      }
+
+      .hero-slider {
+        min-height: 390px;
+      }
+
+      .hero-slide {
+        align-items: flex-start;
+        padding: 37px 23px 70px;
+        background-position: 63% center;
+      }
+
+      .hero-slide::before,
+      html[dir="rtl"] .hero-slide::before {
+        background: linear-gradient(0deg, rgba(5, 16, 24, .94), rgba(5, 16, 24, .62) 80%, rgba(5, 16, 24, .35));
+      }
+
+      .hero-content {
+        width: 100%;
+      }
+
+      .hero-content h1 {
+        font-size: 31px;
+      }
+
+      .hero-content p {
+        font-size: 12px;
+        line-height: 1.65;
+      }
+
+      .hero-side {
+        grid-template-columns: 1fr;
+      }
+
+      .side-offer {
+        min-height: 180px;
+      }
+
+      .benefits {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .benefit {
+        min-height: 83px;
+        padding: 9px;
+        gap: 8px;
+      }
+
+      .benefit i {
+        font-size: 21px;
+      }
+
+      .benefit strong {
+        font-size: 10px;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .category-card {
+        min-height: 120px;
+      }
+
+      .section-heading {
+        gap: 8px;
+        margin-inline: 10px;
+      }
+
+      .section-heading h2 {
+        font-size: 15px;
+      }
+
+      .product-card {
+        flex-basis: 75%;
+        min-width: 225px;
+      }
+
+      .promo-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .promo-card {
+        min-height: 210px;
+      }
+
+      .sale-banner {
+        min-height: 245px;
+        align-items: flex-end;
+        padding: 25px 20px;
+        background-position: 60% center;
+      }
+
+      .sale-banner::before,
+      .sale-banner.red::before,
+      .sale-banner.green::before,
+      html[dir="rtl"] .sale-banner::before,
+      html[dir="rtl"] .sale-banner.red::before,
+      html[dir="rtl"] .sale-banner.green::before {
+        background: linear-gradient(0deg, rgba(7, 23, 34, .96), rgba(7, 23, 34, .32));
+      }
+
+      .sale-banner.red::before,
+      html[dir="rtl"] .sale-banner.red::before {
+        background: linear-gradient(0deg, rgba(174, 0, 12, .96), rgba(174, 0, 12, .26));
+      }
+
+      .sale-banner.green::before,
+      html[dir="rtl"] .sale-banner.green::before {
+        background: linear-gradient(0deg, rgba(15, 78, 46, .96), rgba(15, 78, 46, .25));
+      }
+
+      .mini-category-row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .brand-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .service-main,
+      .service-contact {
+        padding: 22px 18px;
+      }
+
+      .service-main h2,
+      .service-contact h2 {
+        font-size: 22px;
+      }
+
+      .service-contact {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .directory-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .store-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .store-card {
+        min-height: 180px;
+      }
+
+      .about-box {
+        padding: 21px 15px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 19px;
+      }
+
+      .footer-benefits {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-benefit:nth-child(3) {
+        border-top: 1px solid #d6dade;
+        border-inline-end: 1px solid #d6dade;
+      }
+
+      .footer-benefit:nth-child(2n) {
+        border-inline-end: 0;
+      }
+
+      .quick-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-image {
+        height: 250px;
+      }
+
+      .search-results-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-field.full {
+        grid-column: auto;
+      }
+
+      .carousel-btn {
+        width: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-offer">
+    <div class="container">
+      <i class="fa-solid fa-truck-fast"></i>
+      <span data-ar="توصيل مجاني داخل طرابلس للطلبات فوق" data-en="Free delivery in Tripoli on orders over"></span>
+      <strong><span class="money" data-price="300"></span></strong>
+      <span class="offer-countdown" id="offerCountdown" aria-label="Offer countdown"></span>
+    </div>
+  </div>
+
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-links">
+        <a href="#stores"><i class="fa-solid fa-location-dot"></i><span data-ar="فروعنا" data-en="Store locator"></span></a>
+        <button type="button" id="trackOrderBtn"><i class="fa-solid fa-box"></i><span data-ar="تتبع طلبك" data-en="Track order"></span></button>
+        <a href="#service"><i class="fa-solid fa-screwdriver-wrench"></i><span data-ar="خدمة المحترفين" data-en="Professional service"></span></a>
+        <a href="#about"><i class="fa-solid fa-building"></i><span data-ar="عن تولكس" data-en="About TOOLIX"></span></a>
+      </div>
+      <div class="utility-contact">
+        <a href="tel:+218912345678"><i class="fa-solid fa-phone"></i>+218 91 234 5678</a>
+        <button type="button" id="languageBtn"><i class="fa-solid fa-globe"></i><span id="languageLabel">English</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-stack">
+    <header class="main-header">
+      <div class="container header-inner">
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <a class="logo" href="#top" aria-label="TOOLIX Libya home">
+          <i class="fa-solid fa-wrench logo-mark"></i>
+          <span>
+            <span class="logo-main">TOOLIX</span>
+            <span class="logo-sub" data-ar="أدوات ومعدات ليبيا" data-en="TOOLS & EQUIPMENT LIBYA"></span>
+          </span>
+        </a>
+
+        <div class="search-wrap">
+          <form class="search-form" id="searchForm">
+            <select id="searchCategory" aria-label="Search category">
+              <option value="" data-ar="كل الأقسام" data-en="All categories"></option>
+              <option value="power" data-ar="العدد الكهربائية" data-en="Power tools"></option>
+              <option value="hand" data-ar="العدد اليدوية" data-en="Hand tools"></option>
+              <option value="machinery" data-ar="المعدات والآلات" data-en="Machinery"></option>
+              <option value="safety" data-ar="معدات السلامة" data-en="Safety equipment"></option>
+              <option value="garden" data-ar="الحدائق" data-en="Garden tools"></option>
+              <option value="welding" data-ar="اللحام" data-en="Welding"></option>
+            </select>
+            <input id="searchInput" type="search" autocomplete="off"
+              data-ph-ar="ابحث عن مثقاب، مولد، ماكينة لحام..."
+              data-ph-en="Search drills, generators, welding machines..."
+              aria-label="Search products">
+            <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <div class="search-suggestions" id="searchSuggestions"></div>
+        </div>
+
+        <div class="header-actions">
+          <button class="head-action" id="accountBtn" type="button">
+            <i class="fa-regular fa-user"></i>
+            <span data-ar="حسابي" data-en="Account"></span>
+          </button>
+          <button class="head-action" id="wishlistBtn" type="button">
+            <i class="fa-regular fa-heart"></i>
+            <span data-ar="المفضلة" data-en="Wishlist"></span>
+            <span class="action-count" id="wishlistCount">0</span>
+          </button>
+          <button class="head-action" id="cartBtn" type="button">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span data-ar="السلة" data-en="Cart"></span>
+            <span class="action-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="category-nav">
+      <div class="container nav-inner">
+        <button class="all-categories" id="categoryMenuBtn" type="button">
+          <i class="fa-solid fa-bars"></i>
+          <span data-ar="جميع الأقسام" data-en="ALL DEPARTMENTS"></span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+
+        <div class="main-nav">
+          <a class="active" href="#top"><span data-ar="الرئيسية" data-en="Home"></span></a>
+          <a href="#power"><span data-ar="عدد كهربائية" data-en="Power Tools"></span></a>
+          <a href="#machinery"><span data-ar="معدات الورش" data-en="Workshop"></span></a>
+          <a href="#garden"><span data-ar="الحدائق" data-en="Garden"></span></a>
+          <a href="#safety"><span data-ar="السلامة" data-en="Safety"></span></a>
+          <a href="#stores"><span data-ar="فروع طرابلس" data-en="Tripoli Stores"></span></a>
+          <a class="nav-sale" href="#best"><span data-ar="عروض اليوم" data-en="TODAY'S DEALS"></span></a>
+        </div>
+
+        <div class="mega-menu" id="megaMenu">
+          <div class="mega-group">
+            <h4 data-ar="العدد الكهربائية" data-en="Power Tools"></h4>
+            <button type="button" data-filter="power" data-query-ar="مثقاب" data-query-en="Drill"><span data-ar="المثاقب والمفكات" data-en="Drills & Drivers"></span></button>
+            <button type="button" data-filter="power" data-query-ar="صاروخ" data-query-en="Grinder"><span data-ar="الصواريخ والجلاخات" data-en="Grinders"></span></button>
+            <button type="button" data-filter="power" data-query-ar="منشار" data-query-en="Saw"><span data-ar="المناشير الكهربائية" data-en="Electric Saws"></span></button>
+            <button type="button" data-filter="power" data-query-ar="هدم" data-query-en="Demolition"><span data-ar="مطارق الهدم" data-en="Demolition Hammers"></span></button>
+          </div>
+          <div class="mega-group">
+            <h4 data-ar="معدات الورش" data-en="Workshop Equipment"></h4>
+            <button type="button" data-filter="machinery" data-query-ar="ضاغط" data-query-en="Compressor"><span data-ar="ضواغط الهواء" data-en="Air Compressors"></span></button>
+            <button type="button" data-filter="machinery" data-query-ar="مولد" data-query-en="Generator"><span data-ar="المولدات" data-en="Generators"></span></button>
+            <button type="button" data-filter="welding" data-query-ar="لحام" data-query-en="Welding"><span data-ar="ماكينات اللحام" data-en="Welding Machines"></span></button>
+            <button type="button" data-filter="machinery" data-query-ar="رافعة" data-query-en="Jack"><span data-ar="الروافع والجاكات" data-en="Lifting & Jacks"></span></button>
+          </div>
+          <div class="mega-group">
+            <h4 data-ar="العدد اليدوية" data-en="Hand Tools"></h4>
+            <button type="button" data-filter="hand" data-query-ar="طقم" data-query-en="Set"><span data-ar="أطقم العدد" data-en="Tool Sets"></span></button>
+            <button type="button" data-filter="hand" data-query-ar="مفتاح" data-query-en="Wrench"><span data-ar="المفاتيح واللقم" data-en="Wrenches & Sockets"></span></button>
+            <button type="button" data-filter="hand" data-query-ar="قياس" data-query-en="Measure"><span data-ar="أدوات القياس" data-en="Measuring Tools"></span></button>
+            <button type="button" data-filter="hand" data-query-ar="تخزين" data-query-en="Storage"><span data-ar="صناديق وتخزين" data-en="Storage & Boxes"></span></button>
+          </div>
+          <div class="mega-group">
+            <h4 data-ar="الموقع والحديقة" data-en="Site & Garden"></h4>
+            <button type="button" data-filter="safety"><span data-ar="معدات السلامة" data-en="Safety Equipment"></span></button>
+            <button type="button" data-filter="garden"><span data-ar="معدات الحدائق" data-en="Garden Machinery"></span></button>
+            <button type="button" data-filter="machinery" data-query-ar="مضخة" data-query-en="Pump"><span data-ar="المضخات" data-en="Water Pumps"></span></button>
+            <button type="button" data-filter="best" data-query-ar="إضاءة" data-query-en="Lighting"><span data-ar="إضاءة الموقع" data-en="Site Lighting"></span></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <aside class="mobile-drawer" id="mobileDrawer">
+    <div class="mobile-head">
+      <strong>TOOLIX LIBYA</strong>
+      <button type="button" id="closeMobileMenu" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-links">
+      <a href="#top"><i class="fa-solid fa-house"></i><span data-ar="الرئيسية" data-en="Home"></span></a>
+      <button type="button" data-filter="power"><i class="fa-solid fa-screwdriver-wrench"></i><span data-ar="العدد الكهربائية" data-en="Power Tools"></span></button>
+      <button type="button" data-filter="hand"><i class="fa-solid fa-toolbox"></i><span data-ar="العدد اليدوية" data-en="Hand Tools"></span></button>
+      <button type="button" data-filter="machinery"><i class="fa-solid fa-gears"></i><span data-ar="معدات الورش" data-en="Workshop Equipment"></span></button>
+      <button type="button" data-filter="welding"><i class="fa-solid fa-fire-flame-curved"></i><span data-ar="معدات اللحام" data-en="Welding Equipment"></span></button>
+      <button type="button" data-filter="garden"><i class="fa-solid fa-leaf"></i><span data-ar="الحدائق والزراعة" data-en="Garden & Agriculture"></span></button>
+      <button type="button" data-filter="safety"><i class="fa-solid fa-helmet-safety"></i><span data-ar="معدات السلامة" data-en="Safety Equipment"></span></button>
+      <a href="#stores"><i class="fa-solid fa-location-dot"></i><span data-ar="فروع طرابلس" data-en="Tripoli Stores"></span></a>
+      <button type="button" id="mobileLanguageBtn"><i class="fa-solid fa-globe"></i><span data-ar="English" data-en="العربية"></span></button>
+    </div>
+  </aside>
+
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <main id="top">
+    <section class="hero-area container">
+      <div class="hero-grid">
+        <div class="hero-slider" id="heroSlider">
+          <article class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=1500&q=88')">
+            <div class="hero-content">
+              <span class="hero-kicker"><i class="fa-solid fa-bolt"></i><span data-ar="عروض المحترفين" data-en="PROFESSIONAL DEALS"></span></span>
+              <h1 data-ar="قوة أكبر لكل مشروع" data-en="More Power For Every Project"></h1>
+              <p data-ar="اكتشف أحدث العدد الكهربائية ومعدات الورش الأصلية مع ضمان وخدمة توصيل سريعة داخل طرابلس."
+                 data-en="Discover genuine power tools and workshop equipment with warranty and fast delivery across Tripoli."></p>
+              <div class="hero-price"><small data-ar="ابتداءً من" data-en="Starting from"></small> <span class="money" data-price="299"></span></div>
+              <button class="primary-btn" type="button" data-filter="power">
+                <span data-ar="تسوق الآن" data-en="Shop Now"></span><i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1500&q=88')">
+            <div class="hero-content">
+              <span class="hero-kicker"><i class="fa-solid fa-helmet-safety"></i><span data-ar="موسم البناء" data-en="CONSTRUCTION SEASON"></span></span>
+              <h1 data-ar="معدات تتحمل أصعب المواقع" data-en="Equipment Built For Tough Sites"></h1>
+              <p data-ar="مولدات وضواغط ومعدات سلامة مختارة للمقاولين والفنيين وأصحاب الورش في ليبيا."
+                 data-en="Generators, compressors and safety equipment selected for contractors, technicians and workshops."></p>
+              <div class="hero-price"><span data-ar="خصم حتى 30%" data-en="Save up to 30%"></span></div>
+              <button class="primary-btn" type="button" data-filter="machinery">
+                <span data-ar="اكتشف المعدات" data-en="Explore Equipment"></span><i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+          </article>
+
+          <article class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1500&q=88')">
+            <div class="hero-content">
+              <span class="hero-kicker"><i class="fa-solid fa-leaf"></i><span data-ar="موسم الحديقة" data-en="GARDEN SEASON"></span></span>
+              <h1 data-ar="جهّز حديقتك باحتراف" data-en="Prepare Your Garden Like A Pro"></h1>
+              <p data-ar="جزازات عشب، مناشير أشجار، مضخات مياه وأدوات زراعة بأسعار خاصة لفترة محدودة."
+                 data-en="Lawn mowers, chainsaws, water pumps and gardening tools at limited-time prices."></p>
+              <div class="hero-price"><small data-ar="ابتداءً من" data-en="Starting from"></small> <span class="money" data-price="149"></span></div>
+              <button class="primary-btn" type="button" data-filter="garden">
+                <span data-ar="تسوق معدات الحديقة" data-en="Shop Garden Tools"></span><i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+          </article>
+
+          <div class="hero-controls">
+            <div class="hero-dots" id="heroDots">
+              <button class="hero-dot active" type="button" data-slide="0" aria-label="Slide 1"></button>
+              <button class="hero-dot" type="button" data-slide="1" aria-label="Slide 2"></button>
+              <button class="hero-dot" type="button" data-slide="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="hero-arrows">
+              <button class="hero-arrow" type="button" id="heroPrev" aria-label="Previous slide"><i class="fa-solid fa-chevron-right"></i></button>
+              <button class="hero-arrow" type="button" id="heroNext" aria-label="Next slide"><i class="fa-solid fa-chevron-left"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <article class="side-offer" style="background-image:url('https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=800&q=85')">
+            <div class="side-offer-content">
+              <small data-ar="عرض الأسبوع" data-en="DEAL OF THE WEEK"></small>
+              <h2 data-ar="مثاقب لاسلكية" data-en="Cordless Drills"></h2>
+              <strong data-ar="خصم 25%" data-en="25% OFF"></strong>
+              <button type="button" data-query-ar="مثقاب" data-query-en="Drill"><span data-ar="اكتشف" data-en="DISCOVER"></span></button>
+            </div>
+          </article>
+
+          <article class="side-offer" style="background-image:url('https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=800&q=85')">
+            <div class="side-offer-content">
+              <small data-ar="تنظيم الورشة" data-en="WORKSHOP STORAGE"></small>
+              <h2 data-ar="صناديق وأطقم عدد" data-en="Toolboxes & Sets"></h2>
+              <strong data-ar="من 79 د.ل" data-en="From 79 LYD"></strong>
+              <button type="button" data-filter="hand"><span data-ar="تسوق" data-en="SHOP"></span></button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="benefits">
+        <div class="benefit">
+          <i class="fa-solid fa-truck-fast"></i>
+          <div><strong data-ar="توصيل سريع" data-en="Fast Delivery"></strong><small data-ar="داخل طرابلس وضواحيها" data-en="Across Tripoli and nearby areas"></small></div>
+        </div>
+        <div class="benefit">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div><strong data-ar="ضمان رسمي" data-en="Official Warranty"></strong><small data-ar="منتجات أصلية ومضمونة" data-en="Genuine guaranteed products"></small></div>
+        </div>
+        <div class="benefit">
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <div><strong data-ar="الدفع عند الاستلام" data-en="Cash On Delivery"></strong><small data-ar="ادفع بأمان عند الاستلام" data-en="Pay safely upon delivery"></small></div>
+        </div>
+        <div class="benefit">
+          <i class="fa-solid fa-headset"></i>
+          <div><strong data-ar="دعم فني" data-en="Technical Support"></strong><small data-ar="خبراء أدوات لخدمتك" data-en="Tool experts ready to help"></small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-block" id="categories">
+      <div class="section-heading">
+        <div class="section-heading-content">
+          <h2 data-ar="تسوق حسب القسم" data-en="Shop By Department"></h2>
+          <p data-ar="كل ما تحتاجه للموقع والورشة والمنزل" data-en="Everything for your site, workshop and home"></p>
+        </div>
+      </div>
+
+      <div class="category-grid">
+        <button class="category-card" type="button" data-filter="power">
+          <span class="category-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+          <span data-ar="عدد كهربائية" data-en="Power Tools"></span>
+        </button>
+        <button class="category-card" type="button" data-filter="hand">
+          <span class="category-icon"><i class="fa-solid fa-toolbox"></i></span>
+          <span data-ar="عدد يدوية" data-en="Hand Tools"></span>
+        </button>
+        <button class="category-card" type="button" data-filter="machinery">
+          <span class="category-icon"><i class="fa-solid fa-gears"></i></span>
+          <span data-ar="معدات وآلات" data-en="Machinery"></span>
+        </button>
+        <button class="category-card" type="button" data-filter="welding">
+          <span class="category-icon"><i class="fa-solid fa-fire-flame-curved"></i></span>
+          <span data-ar="لحام وقص" data-en="Welding & Cutting"></span>
+        </button>
+        <button class="category-card" type="button" data-filter="safety">
+          <span class="category-icon"><i class="fa-solid fa-helmet-safety"></i></span>
+          <span data-ar="معدات السلامة" data-en="Safety Equipment"></span>
+        </button>
+        <button class="category-card" type="button" data-filter="garden">
+          <span class="category-icon"><i class="fa-solid fa-leaf"></i></span>
+          <span data-ar="حدائق وزراعة" data-en="Garden Tools"></span>
+        </button>
+        <button class="category-card" type="button" data-query-ar="مضخة" data-query-en="Pump">
+          <span class="category-icon"><i class="fa-solid fa-faucet-drip"></i></span>
+          <span data-ar="مضخات ومياه" data-en="Pumps & Water"></span>
+        </button>
+        <button class="category-card" type="button" data-query-ar="قياس" data-query-en="Measure">
+          <span class="category-icon"><i class="fa-solid fa-ruler-combined"></i></span>
+          <span data-ar="قياس وليزر" data-en="Measuring & Laser"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="container product-section" id="power">
+      <div class="product-topbar red">
+        <h2 data-ar="اختيارات العدد الكهربائية" data-en="Power Tool Selection"></h2>
+        <button class="view-all" type="button" data-filter="power"><span data-ar="عرض الكل" data-en="VIEW ALL"></span><i class="fa-solid fa-arrow-left"></i></button>
+      </div>
+      <div class="carousel-shell">
+        <div class="product-track" id="powerProducts"></div>
+        <button class="carousel-btn carousel-prev" type="button" data-carousel="powerProducts" data-direction="-1" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-next" type="button" data-carousel="powerProducts" data-direction="1" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="container promo-grid">
+      <article class="promo-card red" style="background-image:url('https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=900&q=85')">
+        <div class="promo-content">
+          <h3 data-ar="مناشير للمحترفين" data-en="Professional Saws"></h3>
+          <p data-ar="دقة، قوة وأمان لمشاريع النجارة والبناء." data-en="Precision, power and safety for woodworking and construction."></p>
+          <span class="promo-price" data-ar="خصم حتى 30%" data-en="SAVE UP TO 30%"></span>
+          <button class="outline-btn" type="button" data-query-ar="منشار" data-query-en="Saw"><span data-ar="اكتشف المجموعة" data-en="Explore Range"></span></button>
+        </div>
+      </article>
+
+      <article class="promo-card" style="background-image:url('https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=900&q=85')">
+        <div class="promo-content">
+          <h3 data-ar="جهّز ورشتك" data-en="Build Your Workshop"></h3>
+          <p data-ar="معدات متينة وخدمة ما بعد البيع لأصحاب الورش." data-en="Durable equipment and after-sales support for workshops."></p>
+          <span class="promo-price" data-ar="أسعار خاصة" data-en="SPECIAL PRICES"></span>
+          <button class="outline-btn" type="button" data-filter="machinery"><span data-ar="تسوق الآن" data-en="Shop Now"></span></button>
+        </div>
+      </article>
+    </section>
+
+    <section class="container product-section" id="hand">
+      <div class="product-topbar cyan">
+        <h2 data-ar="العدد اليدوية الأكثر طلباً" data-en="Popular Hand Tools"></h2>
+        <button class="view-all" type="button" data-filter="hand"><span data-ar="عرض المزيد" data-en="VIEW MORE"></span><i class="fa-solid fa-arrow-left"></i></button>
+      </div>
+      <div class="carousel-shell">
+        <div class="product-track" id="handProducts"></div>
+        <button class="carousel-btn carousel-prev" type="button" data-carousel="handProducts" data-direction="-1"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-next" type="button" data-carousel="handProducts" data-direction="1"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="container sale-banner" style="background-image:url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=1600&q=88')">
+      <div class="banner-content">
+        <small data-ar="معدات ورش احترافية" data-en="PROFESSIONAL WORKSHOP"></small>
+        <h2 data-ar="قوة تعتمد عليها" data-en="Power You Can Rely On"></h2>
+        <p data-ar="مولدات، ضواغط هواء ومعدات ثقيلة مختارة للعمل المتواصل." data-en="Generators, air compressors and heavy equipment selected for continuous work."></p>
+        <div class="banner-discount" data-ar="حتى 25% خصم" data-en="UP TO 25% OFF"></div>
+        <button class="primary-btn" type="button" data-filter="machinery"><span data-ar="اكتشف المعدات" data-en="Discover Equipment"></span></button>
+      </div>
+    </section>
+
+    <section class="container product-section" id="machinery">
+      <div class="product-topbar orange">
+        <h2 data-ar="معدات الورش والمواقع" data-en="Workshop & Site Equipment"></h2>
+        <button class="view-all" type="button" data-filter="machinery"><span data-ar="عرض الكل" data-en="VIEW ALL"></span><i class="fa-solid fa-arrow-left"></i></button>
+      </div>
+      <div class="carousel-shell">
+        <div class="product-track" id="machineryProducts"></div>
+        <button class="carousel-btn carousel-prev" type="button" data-carousel="machineryProducts" data-direction="-1"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-next" type="button" data-carousel="machineryProducts" data-direction="1"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="container sale-banner green" id="garden" style="background-image:url('https://images.unsplash.com/photo-1599685315640-9ceab2f581ca?auto=format&fit=crop&w=1600&q=88')">
+      <div class="banner-content">
+        <small data-ar="الحدائق والزراعة" data-en="GARDEN & AGRICULTURE"></small>
+        <h2 data-ar="كل ما تحتاجه للحديقة" data-en="Everything For Your Garden"></h2>
+        <p data-ar="معدات قص، مضخات وري وأدوات زراعة بأسعار الموسم." data-en="Cutting equipment, pumps, irrigation and gardening tools at seasonal prices."></p>
+        <div class="banner-discount" data-ar="ابتداءً من 89 د.ل" data-en="FROM 89 LYD"></div>
+        <button class="primary-btn" type="button" data-filter="garden"><span data-ar="تسوق المجموعة" data-en="Shop Collection"></span></button>
+      </div>
+    </section>
+
+    <section class="container product-section">
+      <div class="product-topbar green">
+        <h2 data-ar="معدات الحدائق والمياه" data-en="Garden & Water Equipment"></h2>
+        <button class="view-all" type="button" data-filter="garden"><span data-ar="عرض الكل" data-en="VIEW ALL"></span><i class="fa-solid fa-arrow-left"></i></button>
+      </div>
+      <div class="carousel-shell">
+        <div class="product-track" id="gardenProducts"></div>
+        <button class="carousel-btn carousel-prev" type="button" data-carousel="gardenProducts" data-direction="-1"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-next" type="button" data-carousel="gardenProducts" data-direction="1"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="container section-block">
+      <div class="product-topbar" style="margin-top:-17px;background:#eef1f2">
+        <h2 data-ar="تسوق حسب الاستخدام" data-en="Shop By Application"></h2>
+        <button class="view-all" type="button" data-filter="best"><span data-ar="كل الأقسام" data-en="ALL DEPARTMENTS"></span></button>
+      </div>
+      <div class="mini-category-row">
+        <button class="mini-category" type="button" data-query-ar="سيارة" data-query-en="Automotive"><i class="fa-solid fa-car-battery"></i><span data-ar="معدات السيارات" data-en="Automotive"></span></button>
+        <button class="mini-category" type="button" data-filter="welding"><i class="fa-solid fa-fire-flame-curved"></i><span data-ar="ورش اللحام" data-en="Welding Shops"></span></button>
+        <button class="mini-category" type="button" data-query-ar="نجارة" data-query-en="Woodworking"><i class="fa-solid fa-hammer"></i><span data-ar="أعمال النجارة" data-en="Woodworking"></span></button>
+        <button class="mini-category" type="button" data-query-ar="سباكة" data-query-en="Plumbing"><i class="fa-solid fa-faucet"></i><span data-ar="السباكة والمياه" data-en="Plumbing"></span></button>
+        <button class="mini-category" type="button" data-query-ar="كهرباء" data-query-en="Electrical"><i class="fa-solid fa-plug-circle-bolt"></i><span data-ar="أعمال الكهرباء" data-en="Electrical Work"></span></button>
+        <button class="mini-category" type="button" data-filter="safety"><i class="fa-solid fa-person-digging"></i><span data-ar="مواقع البناء" data-en="Construction Sites"></span></button>
+      </div>
+    </section>
+
+    <section class="container product-section" id="safety">
+      <div class="product-topbar purple">
+        <h2 data-ar="السلامة وملابس العمل" data-en="Safety & Workwear"></h2>
+        <button class="view-all" type="button" data-filter="safety"><span data-ar="عرض المزيد" data-en="VIEW MORE"></span><i class="fa-solid fa-arrow-left"></i></button>
+      </div>
+      <div class="carousel-shell">
+        <div class="product-track" id="safetyProducts"></div>
+        <button class="carousel-btn carousel-prev" type="button" data-carousel="safetyProducts" data-direction="-1"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-next" type="button" data-carousel="safetyProducts" data-direction="1"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="container sale-banner red" style="background-image:url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1600&q=88')">
+      <div class="banner-content">
+        <small data-ar="حلول اللحام والقص" data-en="WELDING & CUTTING SOLUTIONS"></small>
+        <h2 data-ar="لحام أقوى. عمل أدق." data-en="Stronger Welds. Better Work."></h2>
+        <p data-ar="ماكينات إنفرتر، خوذ لحام وإكسسوارات أصلية للمحترفين." data-en="Inverter machines, welding helmets and genuine accessories for professionals."></p>
+        <div class="banner-discount" data-ar="من 399 د.ل" data-en="FROM 399 LYD"></div>
+        <button class="dark-btn" type="button" data-filter="welding"><span data-ar="اكتشف المجموعة" data-en="Explore Range"></span></button>
+      </div>
+    </section>
+
+    <section class="container product-section" id="welding">
+      <div class="product-topbar red">
+        <h2 data-ar="اختيارات اللحام والقص" data-en="Welding & Cutting Selection"></h2>
+        <button class="view-all" type="button" data-filter="welding"><span data-ar="عرض الكل" data-en="VIEW ALL"></span><i class="fa-solid fa-arrow-left"></i></button>
+      </div>
+      <div class="carousel-shell">
+        <div class="product-track" id="weldingProducts"></div>
+        <button class="carousel-btn carousel-prev" type="button" data-carousel="weldingProducts" data-direction="-1"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-next" type="button" data-carousel="weldingProducts" data-direction="1"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="container promo-grid">
+      <article class="promo-card" style="background-image:url('https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=900&q=85')">
+        <div class="promo-content">
+          <h3 data-ar="حلول للمقاولين" data-en="Contractor Solutions"></h3>
+          <p data-ar="طلبات مشاريع، عروض كميات وتوصيل إلى موقع العمل." data-en="Project orders, volume pricing and delivery to your worksite."></p>
+          <span class="promo-price" data-ar="أسعار مشاريع" data-en="PROJECT PRICING"></span>
+          <button class="outline-btn" type="button" id="quoteBtn"><span data-ar="اطلب عرض سعر" data-en="Request A Quote"></span></button>
+        </div>
+      </article>
+
+      <article class="promo-card red" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=85')">
+        <div class="promo-content">
+          <h3 data-ar="معدات موقع متكاملة" data-en="Complete Site Equipment"></h3>
+          <p data-ar="كل احتياجات الموقع من مصدر واحد موثوق." data-en="Everything your worksite needs from one trusted source."></p>
+          <span class="promo-price" data-ar="توصيل داخل طرابلس" data-en="TRIPOLI DELIVERY"></span>
+          <button class="outline-btn" type="button" data-filter="best"><span data-ar="شاهد العروض" data-en="View Deals"></span></button>
+        </div>
+      </article>
+    </section>
+
+    <section class="container product-section" id="best">
+      <div class="section-heading">
+        <div class="section-heading-content">
+          <h2 data-ar="أفضل العروض" data-en="Best Deals"></h2>
+          <p data-ar="أسعار مختارة لفترة محدودة" data-en="Selected prices for a limited time"></p>
+        </div>
+      </div>
+      <div class="carousel-shell">
+        <div class="product-track" id="bestProducts"></div>
+        <button class="carousel-btn carousel-prev" type="button" data-carousel="bestProducts" data-direction="-1"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn carousel-next" type="button" data-carousel="bestProducts" data-direction="1"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <section class="container brand-strip">
+      <div class="section-heading">
+        <div class="section-heading-content">
+          <h2 data-ar="أفضل العلامات التجارية" data-en="Top Brands"></h2>
+        </div>
+      </div>
+      <div class="brand-row">
+        <button class="brand-btn" type="button" data-query-ar="TOTAL" data-query-en="TOTAL">TOTAL</button>
+        <button class="brand-btn" type="button" data-query-ar="BOSCH" data-query-en="BOSCH">BOSCH</button>
+        <button class="brand-btn" type="button" data-query-ar="DEWALT" data-query-en="DEWALT">DEWALT</button>
+        <button class="brand-btn" type="button" data-query-ar="MAKITA" data-query-en="MAKITA">MAKITA</button>
+        <button class="brand-btn" type="button" data-query-ar="STANLEY" data-query-en="STANLEY">STANLEY</button>
+        <button class="brand-btn" type="button" data-query-ar="INGCO" data-query-en="INGCO">INGCO</button>
+        <button class="brand-btn" type="button" data-query-ar="KARCHER" data-query-en="KARCHER">KÄRCHER</button>
+        <button class="brand-btn" type="button" data-query-ar="JASIC" data-query-en="JASIC">JASIC</button>
+      </div>
+    </section>
+
+    <section class="container service-banner" id="service">
+      <div class="service-main">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+          <h2>TOOLIX <em>DRIVE</em></h2>
+          <p data-ar="اطلب عبر الموقع واستلم طلبك من أقرب فرع خلال 3 ساعات." data-en="Order online and collect from your nearest store in as little as 3 hours."></p>
+        </div>
+      </div>
+      <div class="service-contact">
+        <div>
+          <h2 data-ar="تحتاج مساعدة؟" data-en="Need Assistance?"></h2>
+          <p data-ar="خبراؤنا متاحون لاختيار الأداة المناسبة لمشروعك." data-en="Our experts will help you choose the right tool for your project."></p>
+        </div>
+        <a class="primary-btn" href="https://wa.me/218912345678" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i><span data-ar="تواصل معنا" data-en="Contact Us"></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="container section-block">
+      <div class="section-heading">
+        <div class="section-heading-content">
+          <h2 data-ar="دليل الأقسام" data-en="Department Directory"></h2>
+        </div>
+      </div>
+
+      <div class="directory-grid">
+        <article class="directory-card">
+          <div class="directory-card-head"><i class="fa-solid fa-screwdriver-wrench"></i><h3 data-ar="العدد والأدوات" data-en="Tools & Hardware"></h3></div>
+          <button type="button" data-filter="power"><i class="fa-solid fa-angle-left"></i><span data-ar="عدد كهربائية" data-en="Power tools"></span></button>
+          <button type="button" data-filter="hand"><i class="fa-solid fa-angle-left"></i><span data-ar="عدد يدوية" data-en="Hand tools"></span></button>
+          <button type="button" data-query-ar="قياس" data-query-en="Measure"><i class="fa-solid fa-angle-left"></i><span data-ar="القياس والليزر" data-en="Measuring & laser"></span></button>
+          <button type="button" data-query-ar="تخزين" data-query-en="Storage"><i class="fa-solid fa-angle-left"></i><span data-ar="التخزين والتنظيم" data-en="Storage & organisation"></span></button>
+        </article>
+
+        <article class="directory-card">
+          <div class="directory-card-head"><i class="fa-solid fa-gears"></i><h3 data-ar="المعدات والورش" data-en="Workshop & Machinery"></h3></div>
+          <button type="button" data-query-ar="مولد" data-query-en="Generator"><i class="fa-solid fa-angle-left"></i><span data-ar="المولدات" data-en="Generators"></span></button>
+          <button type="button" data-query-ar="ضاغط" data-query-en="Compressor"><i class="fa-solid fa-angle-left"></i><span data-ar="ضواغط الهواء" data-en="Air compressors"></span></button>
+          <button type="button" data-filter="welding"><i class="fa-solid fa-angle-left"></i><span data-ar="اللحام والقص" data-en="Welding & cutting"></span></button>
+          <button type="button" data-query-ar="رافعة" data-query-en="Jack"><i class="fa-solid fa-angle-left"></i><span data-ar="الرفع والمناولة" data-en="Lifting & handling"></span></button>
+        </article>
+
+        <article class="directory-card">
+          <div class="directory-card-head"><i class="fa-solid fa-helmet-safety"></i><h3 data-ar="الموقع والسلامة" data-en="Site & Safety"></h3></div>
+          <button type="button" data-filter="safety"><i class="fa-solid fa-angle-left"></i><span data-ar="الخوذ والنظارات" data-en="Helmets & glasses"></span></button>
+          <button type="button" data-query-ar="قفازات" data-query-en="Gloves"><i class="fa-solid fa-angle-left"></i><span data-ar="القفازات والملابس" data-en="Gloves & workwear"></span></button>
+          <button type="button" data-query-ar="إضاءة" data-query-en="Lighting"><i class="fa-solid fa-angle-left"></i><span data-ar="إضاءة الموقع" data-en="Site lighting"></span></button>
+          <button type="button" data-query-ar="سلم" data-query-en="Ladder"><i class="fa-solid fa-angle-left"></i><span data-ar="السلالم والسقالات" data-en="Ladders & access"></span></button>
+        </article>
+
+        <article class="directory-card">
+          <div class="directory-card-head"><i class="fa-solid fa-leaf"></i><h3 data-ar="المنزل والحديقة" data-en="Home & Garden"></h3></div>
+          <button type="button" data-filter="garden"><i class="fa-solid fa-angle-left"></i><span data-ar="معدات الحدائق" data-en="Garden machinery"></span></button>
+          <button type="button" data-query-ar="مضخة" data-query-en="Pump"><i class="fa-solid fa-angle-left"></i><span data-ar="المضخات والري" data-en="Pumps & irrigation"></span></button>
+          <button type="button" data-query-ar="تنظيف" data-query-en="Cleaner"><i class="fa-solid fa-angle-left"></i><span data-ar="معدات التنظيف" data-en="Cleaning equipment"></span></button>
+          <button type="button" data-query-ar="ضغط" data-query-en="Pressure"><i class="fa-solid fa-angle-left"></i><span data-ar="غسالات الضغط" data-en="Pressure washers"></span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="container store-section" id="stores">
+      <div class="section-heading">
+        <div class="section-heading-content">
+          <h2 data-ar="فروعنا في طرابلس" data-en="Our Tripoli Stores"></h2>
+          <p data-ar="تسوق، استلم أو اطلب الدعم الفني من أقرب فرع" data-en="Shop, collect or request technical support at your nearest branch"></p>
+        </div>
+      </div>
+
+      <div class="store-grid">
+        <article class="store-card">
+          <div class="store-image"><img loading="lazy" src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=240&q=80" alt="Toolix store"></div>
+          <h3 data-ar="تولكس قرقارش" data-en="TOOLIX Gargaresh"></h3>
+          <p><i class="fa-solid fa-phone"></i>+218 91 234 5678</p>
+          <p><i class="fa-solid fa-location-dot"></i><span data-ar="طريق قرقارش، طرابلس" data-en="Gargaresh Road, Tripoli"></span></p>
+          <p><i class="fa-regular fa-clock"></i><span data-ar="السبت - الخميس: 09:00 - 20:00" data-en="Sat - Thu: 09:00 - 20:00"></span></p>
+          <button class="map-btn" type="button" data-map="Gargaresh Tripoli Libya"><span data-ar="فتح الخريطة" data-en="OPEN MAP"></span></button>
+        </article>
+
+        <article class="store-card">
+          <div class="store-image"><img loading="lazy" src="https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=240&q=80" alt="Toolix store"></div>
+          <h3 data-ar="تولكس جنزور" data-en="TOOLIX Janzour"></h3>
+          <p><i class="fa-solid fa-phone"></i>+218 92 345 6789</p>
+          <p><i class="fa-solid fa-location-dot"></i><span data-ar="الطريق الساحلي، جنزور" data-en="Coastal Road, Janzour"></span></p>
+          <p><i class="fa-regular fa-clock"></i><span data-ar="السبت - الخميس: 09:00 - 20:00" data-en="Sat - Thu: 09:00 - 20:00"></span></p>
+          <button class="map-btn" type="button" data-map="Janzour Tripoli Libya"><span data-ar="فتح الخريطة" data-en="OPEN MAP"></span></button>
+        </article>
+
+        <article class="store-card">
+          <div class="store-image"><img loading="lazy" src="https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=240&q=80" alt="Toolix store"></div>
+          <h3 data-ar="تولكس سوق الجمعة" data-en="TOOLIX Souq Al Jumaa"></h3>
+          <p><i class="fa-solid fa-phone"></i>+218 91 456 7812</p>
+          <p><i class="fa-solid fa-location-dot"></i><span data-ar="سوق الجمعة، طرابلس" data-en="Souq Al Jumaa, Tripoli"></span></p>
+          <p><i class="fa-regular fa-clock"></i><span data-ar="السبت - الخميس: 08:30 - 19:30" data-en="Sat - Thu: 08:30 - 19:30"></span></p>
+          <button class="map-btn" type="button" data-map="Souq Al Jumaa Tripoli Libya"><span data-ar="فتح الخريطة" data-en="OPEN MAP"></span></button>
+        </article>
+
+        <article class="store-card">
+          <div class="store-image"><img loading="lazy" src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=240&q=80" alt="Toolix store"></div>
+          <h3 data-ar="تولكس تاجوراء" data-en="TOOLIX Tajoura"></h3>
+          <p><i class="fa-solid fa-phone"></i>+218 92 567 8912</p>
+          <p><i class="fa-solid fa-location-dot"></i><span data-ar="الطريق الساحلي، تاجوراء" data-en="Coastal Road, Tajoura"></span></p>
+          <p><i class="fa-regular fa-clock"></i><span data-ar="السبت - الخميس: 09:00 - 19:30" data-en="Sat - Thu: 09:00 - 19:30"></span></p>
+          <button class="map-btn" type="button" data-map="Tajoura Tripoli Libya"><span data-ar="فتح الخريطة" data-en="OPEN MAP"></span></button>
+        </article>
+
+        <article class="store-card">
+          <div class="store-image"><img loading="lazy" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=240&q=80" alt="Toolix store"></div>
+          <h3 data-ar="تولكس عين زارة" data-en="TOOLIX Ain Zara"></h3>
+          <p><i class="fa-solid fa-phone"></i>+218 91 678 9123</p>
+          <p><i class="fa-solid fa-location-dot"></i><span data-ar="الطريق الرئيسي، عين زارة" data-en="Main Road, Ain Zara"></span></p>
+          <p><i class="fa-regular fa-clock"></i><span data-ar="السبت - الخميس: 09:00 - 20:00" data-en="Sat - Thu: 09:00 - 20:00"></span></p>
+          <button class="map-btn" type="button" data-map="Ain Zara Tripoli Libya"><span data-ar="فتح الخريطة" data-en="OPEN MAP"></span></button>
+        </article>
+
+        <article class="store-card">
+          <div class="store-image"><img loading="lazy" src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=240&q=80" alt="Toolix professional service"></div>
+          <h3 data-ar="مركز خدمة المحترفين" data-en="Professional Service Centre"></h3>
+          <p><i class="fa-solid fa-phone"></i>+218 21 444 9010</p>
+          <p><i class="fa-solid fa-location-dot"></i><span data-ar="طريق المطار، طرابلس" data-en="Airport Road, Tripoli"></span></p>
+          <p><i class="fa-regular fa-clock"></i><span data-ar="الصيانة والضمان: 08:30 - 17:00" data-en="Service & warranty: 08:30 - 17:00"></span></p>
+          <button class="map-btn" type="button" data-map="Airport Road Tripoli Libya"><span data-ar="فتح الخريطة" data-en="OPEN MAP"></span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="container about-box" id="about">
+      <p data-ar="تولكس ليبيا هي وجهتك المتخصصة لشراء العدد اليدوية والكهربائية، معدات الورش، معدات البناء والسلامة والحدائق في طرابلس. نوفر منتجات أصلية من علامات عالمية، أسعاراً تنافسية، توصيلاً سريعاً، ضماناً وخدمة فنية للمحترفين والأفراد."
+         data-en="TOOLIX Libya is your specialist destination for hand tools, power tools, workshop equipment, construction, safety and garden machinery in Tripoli. We provide genuine products from international brands, competitive pricing, fast delivery, warranty and technical support for professionals and home users."></p>
+      <p><strong data-ar="مهمتنا: توفير الأداة المناسبة لكل مشروع، مع خدمة يمكنك الاعتماد عليها." data-en="Our mission: the right tool for every project, backed by service you can rely on."></strong></p>
+    </section>
+  </main>
+
+  <div class="social-band">
+    <div class="container social-row">
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 data-ar="معلومات" data-en="INFORMATION"></h3>
+        <a href="#about" data-ar="عن تولكس" data-en="About TOOLIX"></a>
+        <a href="#stores" data-ar="فروعنا" data-en="Our stores"></a>
+        <a href="#service" data-ar="خدمة المحترفين" data-en="Professional service"></a>
+        <a href="#about" data-ar="الشروط والأحكام" data-en="Terms & conditions"></a>
+        <a href="#about" data-ar="سياسة الخصوصية" data-en="Privacy policy"></a>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-ar="خدماتنا" data-en="OUR SERVICES"></h3>
+        <a href="#service" data-ar="التوصيل داخل طرابلس" data-en="Tripoli delivery"></a>
+        <a href="#service" data-ar="الصيانة والضمان" data-en="Service & warranty"></a>
+        <a href="#service" data-ar="طلبات الشركات" data-en="Business orders"></a>
+        <a href="#service" data-ar="الاستلام من الفرع" data-en="Click & collect"></a>
+        <button class="view-all" type="button" id="footerTrackBtn"><span data-ar="تتبع طلبك" data-en="Track your order"></span></button>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h3 data-ar="معلومات التواصل" data-en="CONTACT INFORMATION"></h3>
+        <p><i class="fa-solid fa-location-dot"></i><span data-ar="قرقارش، طرابلس، ليبيا" data-en="Gargaresh, Tripoli, Libya"></span></p>
+        <p><i class="fa-solid fa-phone"></i><a href="tel:+218912345678" style="display:inline">+218 91 234 5678</a></p>
+        <p><i class="fa-solid fa-envelope"></i><a href="mailto:sales@toolix.ly" style="display:inline">sales@toolix.ly</a></p>
+        <p><i class="fa-regular fa-clock"></i><span data-ar="السبت - الخميس: 09:00 - 20:00" data-en="Saturday - Thursday: 09:00 - 20:00"></span></p>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-ar="اشترك في النشرة البريدية" data-en="SUBSCRIBE TO OUR NEWSLETTER"></h3>
+        <p data-ar="احصل على أحدث العروض والمنتجات الجديدة مباشرة إلى بريدك." data-en="Receive our latest offers and new product updates by email."></p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" required data-ph-ar="أدخل بريدك الإلكتروني" data-ph-en="Enter your email">
+          <button type="submit"><span data-ar="اشترك" data-en="SUBSCRIBE"></span></button>
+        </form>
+        <div class="payment-icons">
+          <span>CASH</span><span>VISA</span><span>Mastercard</span><span>LYPay</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-benefits">
+      <div class="footer-benefit"><i class="fa-solid fa-face-smile"></i><span data-ar="رضاك أولويتنا" data-en="Satisfaction Guaranteed"></span></div>
+      <div class="footer-benefit"><i class="fa-solid fa-hand-holding-dollar"></i><span data-ar="الدفع عند الاستلام" data-en="Cash On Delivery"></span></div>
+      <div class="footer-benefit"><i class="fa-solid fa-truck-fast"></i><span data-ar="توصيل سريع في طرابلس" data-en="Fast Tripoli Delivery"></span></div>
+      <div class="footer-benefit"><i class="fa-solid fa-shield-halved"></i><span data-ar="منتجات أصلية بضمان" data-en="Genuine Products & Warranty"></span></div>
+      <div class="footer-benefit"><i class="fa-solid fa-phone-volume"></i><span data-ar="اتصل بنا: +218 91 234 5678" data-en="Call Us: +218 91 234 5678"></span></div>
+    </div>
+
+    <div class="copyright">
+      <span>© 2025 TOOLIX Libya.</span>
+      <span data-ar=" جميع الحقوق محفوظة." data-en=" All rights reserved."></span>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <h2><i class="fa-solid fa-cart-shopping"></i> <span data-ar="سلة التسوق" data-en="Shopping Cart"></span></h2>
+      <button type="button" id="closeCart" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span data-ar="الإجمالي" data-en="Subtotal"></span>
+        <strong id="cartTotal"></strong>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn" type="button">
+        <span data-ar="إتمام الطلب" data-en="PROCEED TO CHECKOUT"></span>
+      </button>
+    </div>
+  </aside>
+
+  <div class="modal-layer" id="modalLayer" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modal-head">
+        <h2 id="modalTitle"></h2>
+        <button type="button" id="closeModal" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast-stack" id="toastStack"></div>
+
+  <div class="floating-actions">
+    <a class="float-btn" href="https://wa.me/218912345678" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <button class="float-btn back-top" id="backTop" type="button" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
+  </div>
+
+  <script>
+    const productImages = {
+      drill: "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=650&q=82",
+      tools: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=650&q=82",
+      workshop: "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=650&q=82",
+      saw: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=650&q=82",
+      industry: "https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=650&q=82",
+      site: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=650&q=82",
+      worker: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=650&q=82",
+      garden: "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=650&q=82",
+      lawn: "https://images.unsplash.com/photo-1599685315640-9ceab2f581ca?auto=format&fit=crop&w=650&q=82",
+      welding: "https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=650&q=82",
+      building: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=650&q=82",
+      cleaner: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=650&q=82"
+    };
+
+    const products = [
+      {id:1, section:"power", brand:"TOTAL", ar:"مثقاب لاسلكي 20 فولت مع بطاريتين", en:"20V Cordless Drill with 2 Batteries", price:549, old:699, image:productImages.drill, rating:4.8, reviews:84, discount:21},
+      {id:2, section:"power", brand:"BOSCH", ar:"صاروخ جلخ احترافي 115 مم 900 واط", en:"Professional 115mm Angle Grinder 900W", price:389, old:459, image:productImages.workshop, rating:4.7, reviews:56, discount:15},
+      {id:3, section:"power", brand:"DEWALT", ar:"منشار دائري كهربائي 185 مم", en:"185mm Electric Circular Saw", price:879, old:1049, image:productImages.saw, rating:4.9, reviews:44, discount:16},
+      {id:4, section:"power", brand:"MAKITA", ar:"مطرقة هدم احترافية 1510 واط", en:"Professional Demolition Hammer 1510W", price:1899, old:2199, image:productImages.site, rating:4.8, reviews:31, discount:14},
+      {id:5, section:"power", brand:"INGCO", ar:"مفك صدمات لاسلكي 20 فولت", en:"20V Cordless Impact Driver", price:479, old:599, image:productImages.drill, rating:4.6, reviews:68, discount:20},
+      {id:6, section:"power", brand:"STANLEY", ar:"راوتر نجارة كهربائي 1200 واط", en:"1200W Electric Wood Router", price:699, old:829, image:productImages.saw, rating:4.5, reviews:27, discount:16},
+
+      {id:7, section:"hand", brand:"STANLEY", ar:"طقم عدة ميكانيكي 120 قطعة", en:"120-Piece Mechanic Tool Set", price:749, old:899, image:productImages.tools, rating:4.9, reviews:92, discount:17},
+      {id:8, section:"hand", brand:"TOTAL", ar:"طقم مفاتيح ربط 12 قطعة", en:"12-Piece Combination Wrench Set", price:159, old:199, image:productImages.workshop, rating:4.7, reviews:51, discount:20},
+      {id:9, section:"hand", brand:"INGCO", ar:"صندوق تخزين أدوات معدني 3 أدراج", en:"3-Drawer Metal Tool Storage Box", price:329, old:399, image:productImages.tools, rating:4.6, reviews:36, discount:18},
+      {id:10, section:"hand", brand:"KAPRO", ar:"ميزان ليزر أخضر احترافي 30 متر", en:"Professional Green Laser Level 30m", price:499, old:579, image:productImages.site, rating:4.8, reviews:43, discount:14},
+      {id:11, section:"hand", brand:"TOTAL", ar:"طقم كماشات وقواطع 5 قطع", en:"5-Piece Pliers & Cutter Set", price:129, old:159, image:productImages.tools, rating:4.5, reviews:47, discount:19},
+      {id:12, section:"hand", brand:"STANLEY", ar:"شريط قياس احترافي 8 متر", en:"Professional 8m Measuring Tape", price:49, old:69, image:productImages.workshop, rating:4.7, reviews:106, discount:29},
+
+      {id:13, section:"machinery", brand:"KIPOR", ar:"مولد بنزين صامت 6.5 كيلوواط", en:"6.5kW Silent Petrol Generator", price:4899, old:5399, image:productImages.industry, rating:4.8, reviews:29, discount:9},
+      {id:14, section:"machinery", brand:"TOTAL", ar:"ضاغط هواء 100 لتر 3 حصان", en:"100L 3HP Air Compressor", price:2199, old:2499, image:productImages.industry, rating:4.7, reviews:37, discount:12},
+      {id:15, section:"machinery", brand:"KÄRCHER", ar:"غسالة ضغط عالي 180 بار", en:"180 Bar High Pressure Washer", price:1299, old:1499, image:productImages.cleaner, rating:4.9, reviews:61, discount:13},
+      {id:16, section:"machinery", brand:"HONDA", ar:"مضخة مياه بنزين 3 بوصة", en:"3-Inch Petrol Water Pump", price:1399, old:1599, image:productImages.site, rating:4.8, reviews:35, discount:13},
+      {id:17, section:"machinery", brand:"TORIN", ar:"رافعة تمساح هيدروليك 3 طن", en:"3-Ton Hydraulic Floor Jack", price:599, old:699, image:productImages.workshop, rating:4.6, reviews:54, discount:14},
+      {id:18, section:"machinery", brand:"TOTAL", ar:"مكنسة صناعية رطب وجاف 30 لتر", en:"30L Wet & Dry Industrial Vacuum", price:729, old:849, image:productImages.cleaner, rating:4.7, reviews:42, discount:14},
+
+      {id:19, section:"garden", brand:"STIHL", ar:"منشار أشجار بنزين 18 بوصة", en:"18-Inch Petrol Chainsaw", price:1149, old:1299, image:productImages.garden, rating:4.8, reviews:39, discount:12},
+      {id:20, section:"garden", brand:"TOTAL", ar:"جزازة عشب بنزين 46 سم", en:"46cm Petrol Lawn Mower", price:1749, old:1999, image:productImages.lawn, rating:4.7, reviews:28, discount:13},
+      {id:21, section:"garden", brand:"INGCO", ar:"ماكينة قص حواف لاسلكية 20 فولت", en:"20V Cordless Grass Trimmer", price:449, old:529, image:productImages.garden, rating:4.5, reviews:41, discount:15},
+      {id:22, section:"garden", brand:"HONDA", ar:"مضخة ري بنزين 2 بوصة", en:"2-Inch Petrol Irrigation Pump", price:1199, old:1399, image:productImages.site, rating:4.8, reviews:34, discount:14},
+      {id:23, section:"garden", brand:"TOTAL", ar:"منفاخ أوراق لاسلكي 20 فولت", en:"20V Cordless Leaf Blower", price:399, old:469, image:productImages.lawn, rating:4.6, reviews:46, discount:15},
+      {id:24, section:"garden", brand:"GARDENA", ar:"طقم ري وحديقة متكامل", en:"Complete Garden & Irrigation Set", price:229, old:279, image:productImages.garden, rating:4.7, reviews:65, discount:18},
+
+      {id:25, section:"safety", brand:"3M", ar:"خوذة سلامة احترافية بتهوية", en:"Professional Vented Safety Helmet", price:89, old:109, image:productImages.worker, rating:4.8, reviews:72, discount:18},
+      {id:26, section:"safety", brand:"DEWALT", ar:"حذاء أمان مقاوم للانزلاق", en:"Slip-Resistant Safety Boots", price:279, old:329, image:productImages.site, rating:4.7, reviews:48, discount:15},
+      {id:27, section:"safety", brand:"3M", ar:"قناع تنفس مع فلترين", en:"Dual Filter Respirator Mask", price:169, old:199, image:productImages.worker, rating:4.9, reviews:81, discount:15},
+      {id:28, section:"safety", brand:"TOTAL", ar:"قفازات عمل مقاومة للقطع", en:"Cut-Resistant Work Gloves", price:39, old:49, image:productImages.workshop, rating:4.6, reviews:119, discount:20},
+      {id:29, section:"safety", brand:"INGCO", ar:"نظارة حماية شفافة مضادة للضباب", en:"Anti-Fog Clear Safety Glasses", price:29, old:39, image:productImages.worker, rating:4.5, reviews:93, discount:26},
+      {id:30, section:"safety", brand:"PORTWEST", ar:"سترة عاكسة عالية الوضوح", en:"High Visibility Reflective Vest", price:49, old:65, image:productImages.site, rating:4.7, reviews:76, discount:25},
+
+      {id:31, section:"welding", brand:"JASIC", ar:"ماكينة لحام إنفرتر 200 أمبير", en:"200A Inverter Welding Machine", price:949, old:1099, image:productImages.welding, rating:4.9, reviews:67, discount:14},
+      {id:32, section:"welding", brand:"TOTAL", ar:"ماكينة لحام MIG متعددة الوظائف", en:"Multi-Function MIG Welding Machine", price:1899, old:2199, image:productImages.industry, rating:4.8, reviews:35, discount:14},
+      {id:33, section:"welding", brand:"INGCO", ar:"خوذة لحام أوتوماتيكية التعتيم", en:"Auto-Darkening Welding Helmet", price:249, old:299, image:productImages.welding, rating:4.7, reviews:59, discount:17},
+      {id:34, section:"welding", brand:"HYPERTHERM", ar:"ماكينة قطع بلازما 40 أمبير", en:"40A Plasma Cutting Machine", price:2399, old:2699, image:productImages.industry, rating:4.8, reviews:22, discount:11},
+      {id:35, section:"welding", brand:"JASIC", ar:"جهاز لحام TIG احترافي 200 أمبير", en:"Professional 200A TIG Welder", price:2899, old:3299, image:productImages.welding, rating:4.9, reviews:28, discount:12},
+      {id:36, section:"welding", brand:"TOTAL", ar:"طقم ملحقات لحام 18 قطعة", en:"18-Piece Welding Accessory Kit", price:189, old:229, image:productImages.tools, rating:4.6, reviews:44, discount:17},
+
+      {id:37, section:"best", brand:"TOTAL", ar:"كشاف موقع LED قابل للشحن", en:"Rechargeable LED Site Light", price:179, old:239, image:productImages.site, rating:4.7, reviews:83, discount:25},
+      {id:38, section:"best", brand:"STANLEY", ar:"شاحن بطارية سيارة ذكي", en:"Smart Automotive Battery Charger", price:349, old:429, image:productImages.workshop, rating:4.8, reviews:61, discount:19},
+      {id:39, section:"best", brand:"INGCO", ar:"سلم ألمنيوم متعدد الاستخدام 4×3", en:"4×3 Multi-Purpose Aluminium Ladder", price:699, old:849, image:productImages.building, rating:4.6, reviews:39, discount:18},
+      {id:40, section:"best", brand:"BOSCH", ar:"كاشف معادن وأسلاك داخل الجدران", en:"Wall Metal & Wire Detector", price:429, old:499, image:productImages.drill, rating:4.8, reviews:52, discount:14},
+      {id:41, section:"best", brand:"KÄRCHER", ar:"منظف ضغط صغير للسيارات والمنزل", en:"Compact Pressure Cleaner for Car & Home", price:799, old:949, image:productImages.cleaner, rating:4.7, reviews:72, discount:16},
+      {id:42, section:"best", brand:"TOTAL", ar:"طقم أدوات كهربائي منزلي 101 قطعة", en:"101-Piece Home Electrical Tool Kit", price:459, old:559, image:productImages.tools, rating:4.9, reviews:98, discount:18}
+    ];
+
+    const trackMap = {
+      powerProducts: "power",
+      handProducts: "hand",
+      machineryProducts: "machinery",
+      gardenProducts: "garden",
+      safetyProducts: "safety",
+      weldingProducts: "welding",
+      bestProducts: "best"
+    };
+
+    let language = localStorage.getItem("toolix-language") || "ar";
+    let cart = [];
+    let wishlist = [];
+    let compare = [];
+    let currentSlide = 0;
+    let slideTimer;
+
+    try {
+      cart = JSON.parse(localStorage.getItem("toolix-cart") || "[]");
+      wishlist = JSON.parse(localStorage.getItem("toolix-wishlist") || "[]");
+      compare = JSON.parse(localStorage.getItem("toolix-compare") || "[]");
+    } catch (error) {
+      cart = [];
+      wishlist = [];
+      compare = [];
+    }
+
+    function formatMoney(value) {
+      const locale = language === "ar" ? "ar-LY" : "en-US";
+      const number = new Intl.NumberFormat(locale, {maximumFractionDigits: 0}).format(value);
+      return language === "ar" ? `${number} د.ل` : `${number} LYD`;
+    }
+
+    function saveState() {
+      localStorage.setItem("toolix-cart", JSON.stringify(cart));
+      localStorage.setItem("toolix-wishlist", JSON.stringify(wishlist));
+      localStorage.setItem("toolix-compare", JSON.stringify(compare));
+    }
+
+    function productCard(product) {
+      const isFav = wishlist.includes(product.id);
+      const isCompared = compare.includes(product.id);
+
+      return `
+        <article class="product-card" data-product-id="${product.id}">
+          <span class="discount-badge">-${product.discount}%</span>
+          <span class="stock-badge" data-ar="متوفر" data-en="IN STOCK"></span>
+          <button class="fav-btn ${isFav ? "active" : ""}" type="button" data-fav="${product.id}" aria-label="Wishlist">
+            <i class="${isFav ? "fa-solid" : "fa-regular"} fa-heart"></i>
+          </button>
+          <div class="product-image">
+            <img loading="lazy" src="${product.image}" alt="${product.en}">
+            <button class="quick-view" type="button" data-quick="${product.id}">
+              <i class="fa-regular fa-eye"></i> <span data-ar="نظرة سريعة" data-en="QUICK VIEW"></span>
+            </button>
+          </div>
+          <div class="product-info">
+            <div class="product-brand">${product.brand}</div>
+            <h3 class="product-title" data-ar="${product.ar}" data-en="${product.en}"></h3>
+            <div class="rating">
+              <span aria-label="${product.rating} stars">★★★★★</span>
+              <span>(${product.reviews})</span>
+            </div>
+            <div class="price-row">
+              <span class="current-price money" data-price="${product.price}"></span>
+              <span class="old-price money" data-price="${product.old}"></span>
+            </div>
+            <div class="card-bottom">
+              <button class="add-to-cart" type="button" data-add="${product.id}">
+                <i class="fa-solid fa-cart-plus"></i><span data-ar="أضف للسلة" data-en="ADD TO CART"></span>
+              </button>
+              <button class="compare-btn ${isCompared ? "active" : ""}" type="button" data-compare="${product.id}" aria-label="Compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderProducts() {
+      Object.entries(trackMap).forEach(([trackId, section]) => {
+        const track = document.getElementById(trackId);
+        track.innerHTML = products.filter(product => product.section === section).map(productCard).join("");
+      });
+      applyLanguage();
+    }
+
+    function applyLanguage() {
+      document.documentElement.lang = language;
+      document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
+      document.title = language === "ar"
+        ? "TOOLIX ليبيا | أدوات ومعدات في طرابلس"
+        : "TOOLIX Libya | Tools & Equipment in Tripoli";
+
+      document.querySelectorAll("[data-ar][data-en]").forEach(element => {
+        element.textContent = element.dataset[language];
+      });
+
+      document.querySelectorAll("[data-ph-ar][data-ph-en]").forEach(element => {
+        element.placeholder = language === "ar" ? element.dataset.phAr : element.dataset.phEn;
+      });
+
+      document.querySelectorAll(".money").forEach(element => {
+        element.textContent = formatMoney(Number(element.dataset.price));
+      });
+
+      document.getElementById("languageLabel").textContent = language === "ar" ? "English" : "العربية";
+      localStorage.setItem("toolix-language", language);
+      renderCart();
+      updateCounts();
+    }
+
+    function setLanguage(nextLanguage) {
+      language = nextLanguage;
+      applyLanguage();
+      closeMobileDrawer();
+      showToast(language === "ar" ? "تم تغيير اللغة إلى العربية" : "Language changed to English");
+    }
+
+    function updateCounts() {
+      const count = cart.reduce((sum, item) => sum + item.qty, 0);
+      document.getElementById("cartCount").textContent = count;
+      document.getElementById("wishlistCount").textContent = wishlist.length;
+    }
+
+    function addToCart(id, quantity = 1) {
+      const product = products.find(item => item.id === Number(id));
+      if (!product) return;
+
+      const existing = cart.find(item => item.id === product.id);
+      if (existing) existing.qty += quantity;
+      else cart.push({id: product.id, qty: quantity});
+
+      saveState();
+      updateCounts();
+      renderCart();
+      showToast(language === "ar" ? "تمت إضافة المنتج إلى السلة" : "Product added to cart");
+    }
+
+    function renderCart() {
+      const cartItems = document.getElementById("cartItems");
+      const cartTotal = document.getElementById("cartTotal");
+
+      if (!cart.length) {
+        cartItems.innerHTML = `
+          <div class="empty-cart">
+            <div>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <strong>${language === "ar" ? "سلة التسوق فارغة" : "Your cart is empty"}</strong>
+              <p>${language === "ar" ? "أضف بعض الأدوات للبدء." : "Add some tools to get started."}</p>
+            </div>
+          </div>`;
+        cartTotal.textContent = formatMoney(0);
+        return;
+      }
+
+      cartItems.innerHTML = cart.map(item => {
+        const product = products.find(p => p.id === item.id);
+        if (!product) return "";
+        return `
+          <div class="cart-item">
+            <img src="${product.image}" alt="${product.en}">
+            <div>
+              <h4>${language === "ar" ? product.ar : product.en}</h4>
+              <strong>${formatMoney(product.price)}</strong>
+              <div class="qty-control">
+                <button type="button" data-qty="${product.id}" data-change="-1">−</button>
+                <span>${item.qty}</span>
+                <button type="button" data-qty="${product.id}" data-change="1">+</button>
+              </div>
+            </div>
+            <button class="remove-item" type="button" data-remove="${product.id}" aria-label="Remove"><i class="fa-solid fa-trash"></i></button>
+          </div>`;
+      }).join("");
+
+      const total = cart.reduce((sum, item) => {
+        const product = products.find(p => p.id === item.id);
+        return sum + (product ? product.price * item.qty : 0);
+      }, 0);
+
+      cartTotal.textContent = formatMoney(total);
+    }
+
+    function openCart() {
+      document.getElementById("cartDrawer").classList.add("open");
+      document.getElementById("drawerOverlay").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeCart() {
+      document.getElementById("cartDrawer").classList.remove("open");
+      if (!document.getElementById("mobileDrawer").classList.contains("open")) {
+        document.getElementById("drawerOverlay").classList.remove("active");
+        document.body.style.overflow = "";
+      }
+    }
+
+    function openMobileDrawer() {
+      document.getElementById("mobileDrawer").classList.add("open");
+      document.getElementById("drawerOverlay").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeMobileDrawer() {
+      document.getElementById("mobileDrawer").classList.remove("open");
+      if (!document.getElementById("cartDrawer").classList.contains("open")) {
+        document.getElementById("drawerOverlay").classList.remove("active");
+        document.body.style.overflow = "";
+      }
+    }
+
+    function openModal(title, content) {
+      document.getElementById("modalTitle").textContent = title;
+      document.getElementById("modalBody").innerHTML = content;
+      document.getElementById("modalLayer").classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      document.getElementById("modalLayer").classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    function showQuickView(id) {
+      const product = products.find(item => item.id === Number(id));
+      if (!product) return;
+
+      const content = `
+        <div class="quick-grid">
+          <div class="quick-image"><img src="${product.image}" alt="${product.en}"></div>
+          <div class="quick-details">
+            <div class="product-brand">${product.brand}</div>
+            <h3>${language === "ar" ? product.ar : product.en}</h3>
+            <div class="rating">★★★★★ <span>(${product.reviews})</span></div>
+            <span class="current-price">${formatMoney(product.price)}</span>
+            <span class="old-price">${formatMoney(product.old)}</span>
+            <p>${language === "ar"
+              ? "منتج أصلي مناسب للاستخدام الاحترافي والمنزلي، مع ضمان وخدمة ما بعد البيع وتوصيل داخل طرابلس."
+              : "A genuine product suitable for professional and home use, with warranty, after-sales support and Tripoli delivery."}</p>
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-circle-check"></i>${language === "ar" ? "منتج أصلي بضمان" : "Genuine product with warranty"}</li>
+              <li><i class="fa-solid fa-circle-check"></i>${language === "ar" ? "متوفر حالياً في المخزون" : "Currently available in stock"}</li>
+              <li><i class="fa-solid fa-circle-check"></i>${language === "ar" ? "إمكانية الدفع عند الاستلام" : "Cash on delivery available"}</li>
+            </ul>
+            <button class="primary-btn" type="button" data-add="${product.id}">
+              <i class="fa-solid fa-cart-plus"></i>${language === "ar" ? "أضف إلى السلة" : "Add To Cart"}
+            </button>
+          </div>
+        </div>`;
+
+      openModal(language === "ar" ? "تفاصيل المنتج" : "Product Details", content);
+    }
+
+    function getSearchMatches(query, section = "") {
+      const normalized = query.trim().toLowerCase();
+      return products.filter(product => {
+        const sectionMatch = !section || product.section === section;
+        const text = `${product.ar} ${product.en} ${product.brand} ${product.section}`.toLowerCase();
+        return sectionMatch && (!normalized || text.includes(normalized));
+      });
+    }
+
+    function showSearchResults(query, section = "") {
+      const matches = getSearchMatches(query, section);
+      const title = language === "ar" ? "نتائج البحث" : "Search Results";
+      const content = matches.length
+        ? `<div class="search-results-grid">${matches.map(product => `
+            <article class="search-result-card">
+              <img src="${product.image}" alt="${product.en}">
+              <div class="search-result-info">
+                <h4>${language === "ar" ? product.ar : product.en}</h4>
+                <strong>${formatMoney(product.price)}</strong>
+                <button type="button" data-quick="${product.id}">${language === "ar" ? "عرض التفاصيل" : "VIEW DETAILS"}</button>
+              </div>
+            </article>`).join("")}</div>`
+        : `<div class="no-results"><i class="fa-solid fa-magnifying-glass"></i><strong>${language === "ar" ? "لم نعثر على منتجات مطابقة" : "No matching products found"}</strong></div>`;
+
+      openModal(title, content);
+      document.getElementById("searchSuggestions").classList.remove("active");
+      closeMobileDrawer();
+      document.getElementById("megaMenu").classList.remove("active");
+    }
+
+    function toggleWishlist(id) {
+      id = Number(id);
+      const index = wishlist.indexOf(id);
+      if (index >= 0) wishlist.splice(index, 1);
+      else wishlist.push(id);
+      saveState();
+      renderProducts();
+      showToast(index >= 0
+        ? (language === "ar" ? "تمت إزالة المنتج من المفضلة" : "Removed from wishlist")
+        : (language === "ar" ? "تمت إضافة المنتج إلى المفضلة" : "Added to wishlist"));
+    }
+
+    function toggleCompare(id) {
+      id = Number(id);
+      const index = compare.indexOf(id);
+
+      if (index >= 0) {
+        compare.splice(index, 1);
+      } else {
+        if (compare.length >= 4) {
+          showToast(language === "ar" ? "يمكن مقارنة 4 منتجات كحد أقصى" : "You can compare up to 4 products", true);
+          return;
+        }
+        compare.push(id);
+      }
+
+      saveState();
+      renderProducts();
+      showToast(language === "ar" ? "تم تحديث قائمة المقارنة" : "Comparison list updated");
+    }
+
+    function showWishlist() {
+      const matches = products.filter(product => wishlist.includes(product.id));
+      const content = matches.length
+        ? `<div class="search-results-grid">${matches.map(product => `
+            <article class="search-result-card">
+              <img src="${product.image}" alt="${product.en}">
+              <div class="search-result-info">
+                <h4>${language === "ar" ? product.ar : product.en}</h4>
+                <strong>${formatMoney(product.price)}</strong>
+                <button type="button" data-add="${product.id}">${language === "ar" ? "أضف للسلة" : "ADD TO CART"}</button>
+              </div>
+            </article>`).join("")}</div>`
+        : `<div class="no-results"><i class="fa-regular fa-heart"></i><strong>${language === "ar" ? "قائمة المفضلة فارغة" : "Your wishlist is empty"}</strong></div>`;
+
+      openModal(language === "ar" ? "المنتجات المفضلة" : "My Wishlist", content);
+    }
+
+    function openLogin() {
+      openModal(
+        language === "ar" ? "تسجيل الدخول" : "Sign In",
+        `<form id="loginForm" class="form-grid">
+          <div class="form-field full">
+            <label>${language === "ar" ? "البريد الإلكتروني أو رقم الهاتف" : "Email or phone number"}</label>
+            <input name="identity" required placeholder="${language === "ar" ? "أدخل بياناتك" : "Enter your details"}">
+          </div>
+          <div class="form-field full">
+            <label>${language === "ar" ? "كلمة المرور" : "Password"}</label>
+            <input type="password" name="password" required minlength="4" placeholder="••••••••">
+          </div>
+          <div class="form-field full">
+            <button class="modal-submit" type="submit">${language === "ar" ? "تسجيل الدخول" : "SIGN IN"}</button>
+          </div>
+        </form>`
+      );
+
+      document.getElementById("loginForm").addEventListener("submit", event => {
+        event.preventDefault();
+        closeModal();
+        showToast(language === "ar" ? "تم تسجيل الدخول بنجاح" : "Signed in successfully");
+      });
+    }
+
+    function openTrackOrder() {
+      openModal(
+        language === "ar" ? "تتبع طلبك" : "Track Your Order",
+        `<form id="trackForm" class="form-grid">
+          <div class="form-field full">
+            <label>${language === "ar" ? "رقم الطلب" : "Order number"}</label>
+            <input name="order" required placeholder="TLX-2025-0001">
+          </div>
+          <div class="form-field full">
+            <label>${language === "ar" ? "رقم الهاتف" : "Phone number"}</label>
+            <input name="phone" required inputmode="tel" placeholder="+218 9X XXX XXXX">
+          </div>
+          <div class="form-field full">
+            <button class="modal-submit" type="submit">${language === "ar" ? "تتبع الطلب" : "TRACK ORDER"}</button>
+          </div>
+        </form>`
+      );
+
+      document.getElementById("trackForm").addEventListener("submit", event => {
+        event.preventDefault();
+        document.getElementById("modalBody").innerHTML = `
+          <div class="success-box">
+            <i class="fa-solid fa-box-open"></i>
+            <h3>${language === "ar" ? "طلبك قيد التجهيز" : "Your order is being prepared"}</h3>
+            <p>${language === "ar" ? "سيتم التواصل معك عند خروج الطلب للتوصيل." : "We will contact you when your order leaves for delivery."}</p>
+          </div>`;
+      });
+    }
+
+    function openQuoteForm() {
+      openModal(
+        language === "ar" ? "طلب عرض سعر للمشاريع" : "Request A Project Quote",
+        `<form id="quoteForm" class="form-grid">
+          <div class="form-field">
+            <label>${language === "ar" ? "الاسم" : "Name"}</label>
+            <input required name="name">
+          </div>
+          <div class="form-field">
+            <label>${language === "ar" ? "الشركة" : "Company"}</label>
+            <input name="company">
+          </div>
+          <div class="form-field">
+            <label>${language === "ar" ? "رقم الهاتف" : "Phone number"}</label>
+            <input required name="phone" inputmode="tel">
+          </div>
+          <div class="form-field">
+            <label>${language === "ar" ? "البريد الإلكتروني" : "Email"}</label>
+            <input type="email" name="email">
+          </div>
+          <div class="form-field full">
+            <label>${language === "ar" ? "تفاصيل المعدات والكميات" : "Equipment and quantity details"}</label>
+            <textarea required name="details"></textarea>
+          </div>
+          <div class="form-field full">
+            <button class="modal-submit" type="submit">${language === "ar" ? "إرسال الطلب" : "SEND REQUEST"}</button>
+          </div>
+        </form>`
+      );
+
+      document.getElementById("quoteForm").addEventListener("submit", event => {
+        event.preventDefault();
+        document.getElementById("modalBody").innerHTML = `
+          <div class="success-box">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>${language === "ar" ? "تم استلام طلبك" : "Request Received"}</h3>
+            <p>${language === "ar" ? "سيتواصل فريق المشاريع معك خلال يوم عمل." : "Our project team will contact you within one business day."}</p>
+          </div>`;
+      });
+    }
+
+    function openCheckout() {
+      if (!cart.length) {
+        showToast(language === "ar" ? "سلة التسوق فارغة" : "Your cart is empty", true);
+        return;
+      }
+
+      const subtotal = cart.reduce((sum, item) => {
+        const product = products.find(p => p.id === item.id);
+        return sum + product.price * item.qty;
+      }, 0);
+      const delivery = subtotal >= 300 ? 0 : 20;
+
+      openModal(
+        language === "ar" ? "إتمام الطلب" : "Checkout",
+        `<div class="order-summary">
+          <div class="order-summary-line"><span>${language === "ar" ? "قيمة المنتجات" : "Products subtotal"}</span><strong>${formatMoney(subtotal)}</strong></div>
+          <div class="order-summary-line"><span>${language === "ar" ? "التوصيل" : "Delivery"}</span><strong>${delivery ? formatMoney(delivery) : (language === "ar" ? "مجاني" : "FREE")}</strong></div>
+          <div class="order-summary-line total"><span>${language === "ar" ? "الإجمالي" : "Total"}</span><strong>${formatMoney(subtotal + delivery)}</strong></div>
+        </div>
+        <form id="checkoutForm" class="form-grid">
+          <div class="form-field">
+            <label>${language === "ar" ? "الاسم الكامل" : "Full name"}</label>
+            <input required name="name">
+          </div>
+          <div class="form-field">
+            <label>${language === "ar" ? "رقم الهاتف" : "Phone number"}</label>
+            <input required name="phone" inputmode="tel" placeholder="+218">
+          </div>
+          <div class="form-field full">
+            <label>${language === "ar" ? "العنوان داخل طرابلس" : "Delivery address in Tripoli"}</label>
+            <input required name="address">
+          </div>
+          <div class="form-field">
+            <label>${language === "ar" ? "طريقة الدفع" : "Payment method"}</label>
+            <select name="payment">
+              <option>${language === "ar" ? "الدفع عند الاستلام" : "Cash on delivery"}</option>
+              <option>${language === "ar" ? "الدفع بالبطاقة عند الاستلام" : "Card on delivery"}</option>
+              <option>${language === "ar" ? "تحويل مصرفي" : "Bank transfer"}</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>${language === "ar" ? "وقت التوصيل المفضل" : "Preferred delivery time"}</label>
+            <select name="time">
+              <option>${language === "ar" ? "أي وقت" : "Any time"}</option>
+              <option>${language === "ar" ? "09:00 - 13:00" : "09:00 - 13:00"}</option>
+              <option>${language === "ar" ? "14:00 - 19:00" : "14:00 - 19:00"}</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <button class="modal-submit" type="submit">${language === "ar" ? "تأكيد الطلب" : "CONFIRM ORDER"}</button>
+          </div>
+        </form>`
+      );
+
+      document.getElementById("checkoutForm").addEventListener("submit", event => {
+        event.preventDefault();
+        const orderNumber = `TLX-${new Date().getFullYear()}-${Math.floor(1000 + Math.random() * 9000)}`;
+        cart = [];
+        saveState();
+        updateCounts();
+        renderCart();
+        closeCart();
+
+        document.getElementById("modalTitle").textContent = language === "ar" ? "تم تأكيد الطلب" : "Order Confirmed";
+        document.getElementById("modalBody").innerHTML = `
+          <div class="success-box">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3>${language === "ar" ? "شكراً لطلبك!" : "Thank you for your order!"}</h3>
+            <p>${language === "ar" ? "رقم الطلب" : "Order number"}: <strong>${orderNumber}</strong></p>
+            <p>${language === "ar" ? "سنتواصل معك لتأكيد العنوان وموعد التوصيل." : "We will contact you to confirm your address and delivery time."}</p>
+          </div>`;
+      });
+    }
+
+    function showToast(message, isError = false) {
+      const toast = document.createElement("div");
+      toast.className = `toast${isError ? " error" : ""}`;
+      toast.innerHTML = `<i class="fa-solid ${isError ? "fa-circle-exclamation" : "fa-circle-check"}"></i><span>${message}</span>`;
+      document.getElementById("toastStack").appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = "0";
+        toast.style.transform = "translateY(10px)";
+        setTimeout(() => toast.remove(), 250);
+      }, 3000);
+    }
+
+    function showSlide(index) {
+      const slides = [...document.querySelectorAll(".hero-slide")];
+      const dots = [...document.querySelectorAll(".hero-dot")];
+      currentSlide = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => slide.classList.toggle("active", i === currentSlide));
+      dots.forEach((dot, i) => dot.classList.toggle("active", i === currentSlide));
+    }
+
+    function restartSlider() {
+      clearInterval(slideTimer);
+      slideTimer = setInterval(() => showSlide(currentSlide + 1), 6500);
+    }
+
+    function updateCountdown() {
+      const now = Date.now();
+      const day = 24 * 60 * 60 * 1000;
+      let end = Number(localStorage.getItem("toolix-offer-end"));
+      if (!end || end < now) {
+        end = now + day;
+        localStorage.setItem("toolix-offer-end", end);
+      }
+
+      const remaining = Math.max(0, end - now);
+      const hours = Math.floor(remaining / 3600000);
+      const minutes = Math.floor((remaining % 3600000) / 60000);
+      const seconds = Math.floor((remaining % 60000) / 1000);
+      document.getElementById("offerCountdown").innerHTML = `
+        <b>${String(hours).padStart(2, "0")}</b>:<b>${String(minutes).padStart(2, "0")}</b>:<b>${String(seconds).padStart(2, "0")}</b>`;
+    }
+
+    document.addEventListener("click", event => {
+      const addButton = event.target.closest("[data-add]");
+      if (addButton) {
+        addToCart(addButton.dataset.add);
+        return;
+      }
+
+      const quickButton = event.target.closest("[data-quick]");
+      if (quickButton) {
+        showQuickView(quickButton.dataset.quick);
+        return;
+      }
+
+      const favButton = event.target.closest("[data-fav]");
+      if (favButton) {
+        toggleWishlist(favButton.dataset.fav);
+        return;
+      }
+
+      const compareButton = event.target.closest("[data-compare]");
+      if (compareButton) {
+        toggleCompare(compareButton.dataset.compare);
+        return;
+      }
+
+      const filterButton = event.target.closest("[data-filter]");
+      if (filterButton) {
+        showSearchResults("", filterButton.dataset.filter);
+        return;
+      }
+
+      const queryButton = event.target.closest("[data-query-ar], [data-query-en]");
+      if (queryButton) {
+        const query = language === "ar" ? queryButton.dataset.queryAr : queryButton.dataset.queryEn;
+        showSearchResults(query || "");
+        return;
+      }
+
+      const mapButton = event.target.closest("[data-map]");
+      if (mapButton) {
+        window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapButton.dataset.map)}`, "_blank", "noopener");
+        return;
+      }
+
+      const qtyButton = event.target.closest("[data-qty]");
+      if (qtyButton) {
+        const item = cart.find(cartItem => cartItem.id === Number(qtyButton.dataset.qty));
+        if (item) {
+          item.qty += Number(qtyButton.dataset.change);
+          if (item.qty <= 0) cart = cart.filter(cartItem => cartItem.id !== item.id);
+          saveState();
+          renderCart();
+          updateCounts();
+        }
+        return;
+      }
+
+      const removeButton = event.target.closest("[data-remove]");
+      if (removeButton) {
+        cart = cart.filter(item => item.id !== Number(removeButton.dataset.remove));
+        saveState();
+        renderCart();
+        updateCounts();
+      }
+    });
+
+    document.getElementById("languageBtn").addEventListener("click", () => setLanguage(language === "ar" ? "en" : "ar"));
+    document.getElementById("mobileLanguageBtn").addEventListener("click", () => setLanguage(language === "ar" ? "en" : "ar"));
+
+    document.getElementById("cartBtn").addEventListener("click", openCart);
+    document.getElementById("closeCart").addEventListener("click", closeCart);
+    document.getElementById("mobileMenuBtn").addEventListener("click", openMobileDrawer);
+    document.getElementById("closeMobileMenu").addEventListener("click", closeMobileDrawer);
+
+    document.getElementById("drawerOverlay").addEventListener("click", () => {
+      closeCart();
+      closeMobileDrawer();
+    });
+
+    document.getElementById("categoryMenuBtn").addEventListener("click", () => {
+      document.getElementById("megaMenu").classList.toggle("active");
+      document.getElementById("categoryMenuBtn").classList.toggle("active");
+    });
+
+    document.addEventListener("click", event => {
+      if (!event.target.closest(".nav-inner")) {
+        document.getElementById("megaMenu").classList.remove("active");
+        document.getElementById("categoryMenuBtn").classList.remove("active");
+      }
+      if (!event.target.closest(".search-wrap")) {
+        document.getElementById("searchSuggestions").classList.remove("active");
+      }
+    });
+
+    document.getElementById("searchForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const query = document.getElementById("searchInput").value;
+      const section = document.getElementById("searchCategory").value;
+      showSearchResults(query, section);
+    });
+
+    document.getElementById("searchInput").addEventListener("input", event => {
+      const query = event.target.value.trim();
+      const suggestions = document.getElementById("searchSuggestions");
+
+      if (query.length < 2) {
+        suggestions.classList.remove("active");
+        return;
+      }
+
+      const matches = getSearchMatches(query).slice(0, 5);
+      suggestions.innerHTML = matches.length
+        ? matches.map(product => `
+          <button class="suggestion-item" type="button" data-quick="${product.id}">
+            <img src="${product.image}" alt="${product.en}">
+            <span>${language === "ar" ? product.ar : product.en}</span>
+            <b>${formatMoney(product.price)}</b>
+          </button>`).join("")
+        : `<div class="no-results" style="padding:18px">${language === "ar" ? "لا توجد نتائج" : "No results"}</div>`;
+
+      suggestions.classList.add("active");
+    });
+
+    document.querySelectorAll(".carousel-btn").forEach(button => {
+      button.addEventListener("click", () => {
+        const track = document.getElementById(button.dataset.carousel);
+        const amount = Math.max(250, track.clientWidth * .78) * Number(button.dataset.direction);
+        track.scrollBy({left: amount, behavior: "smooth"});
+      });
+    });
+
+    document.getElementById("heroPrev").addEventListener("click", () => {
+      showSlide(currentSlide - 1);
+      restartSlider();
+    });
+
+    document.getElementById("heroNext").addEventListener("click", () => {
+      showSlide(currentSlide + 1);
+      restartSlider();
+    });
+
+    document.querySelectorAll(".hero-dot").forEach(dot => {
+      dot.addEventListener("click", () => {
+        showSlide(Number(dot.dataset.slide));
+        restartSlider();
+      });
+    });
+
+    document.getElementById("modalLayer").addEventListener("click", event => {
+      if (event.target === document.getElementById("modalLayer")) closeModal();
+    });
+
+    document.getElementById("closeModal").addEventListener("click", closeModal);
+    document.getElementById("accountBtn").addEventListener("click", openLogin);
+    document.getElementById("wishlistBtn").addEventListener("click", showWishlist);
+    document.getElementById("trackOrderBtn").addEventListener("click", openTrackOrder);
+    document.getElementById("footerTrackBtn").addEventListener("click", openTrackOrder);
+    document.getElementById("checkoutBtn").addEventListener("click", openCheckout);
+    document.getElementById("quoteBtn").addEventListener("click", openQuoteForm);
+
+    document.getElementById("newsletterForm").addEventListener("submit", event => {
+      event.preventDefault();
+      const email = event.currentTarget.querySelector("input").value.trim();
+      if (!email || !email.includes("@")) {
+        showToast(language === "ar" ? "يرجى إدخال بريد إلكتروني صحيح" : "Please enter a valid email", true);
+        return;
+      }
+      event.currentTarget.reset();
+      showToast(language === "ar" ? "تم الاشتراك في النشرة البريدية" : "Successfully subscribed");
+    });
+
+    document.querySelectorAll(".mobile-links a").forEach(link => {
+      link.addEventListener("click", closeMobileDrawer);
+    });
+
+    document.getElementById("backTop").addEventListener("click", () => window.scrollTo({top: 0, behavior: "smooth"}));
+    window.addEventListener("scroll", () => {
+      document.getElementById("backTop").classList.toggle("show", window.scrollY > 700);
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        closeModal();
+        closeCart();
+        closeMobileDrawer();
+      }
+    });
+
+    renderProducts();
+    applyLanguage();
+    updateCounts();
+    renderCart();
+    showSlide(0);
+    restartSlider();
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
