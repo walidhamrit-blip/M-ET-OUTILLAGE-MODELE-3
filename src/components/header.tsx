@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useCart } from "@/components/cart-context";
+import { ThemeToggle } from "@/components/theme-toggle";
 import type { Category } from "@/db/schema";
 
 export function Header({ categories }: { categories: Category[] }) {
@@ -30,6 +31,7 @@ export function Header({ categories }: { categories: Category[] }) {
             <a href="tel:+218214445566" className="hover:text-white transition-colors">
               ☎ +218 21 444 55 66
             </a>
+            <ThemeToggle />
             <span className="hidden sm:inline text-gray-500">|</span>
             <Link href="/panier" className="hidden sm:inline hover:text-white transition-colors">
               Suivi de commande

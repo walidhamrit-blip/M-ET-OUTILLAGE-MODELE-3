@@ -15,10 +15,16 @@ export const metadata: Metadata = {
     "MaTEK : vente de matériaux de construction et d'outillage professionnel à Tripoli, Libye. Ciment, outillage électroportatif, peinture, plomberie et plus — livraison rapide.",
 };
 
+// Runs before first paint so the saved (or system) theme applies without a flash.
+const themeScript = `(function(){try{var t=localStorage.getItem("theme");var d=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;if(d)document.documentElement.classList.add("dark");}catch(e){}})();`;
+
 export default async function RootLayout({ children }: { children: ReactNode }) {
   const categories = await getCategories();
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="bg-[#f4f4f4] text-slate-900 antialiased">
         <CartProvider>
           <Header categories={categories} />
