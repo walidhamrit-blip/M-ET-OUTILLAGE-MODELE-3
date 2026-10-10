@@ -1,22 +1,31 @@
-import Link from "next/link";
-import type { Category } from "@/db/schema";
+"use client";
 
-export function Footer({ categories }: { categories: Category[] }) {
+import Link from "next/link";
+import { useLang } from "@/components/lang-context";
+import type { Category } from "@/db/schema";
+import type { SiteSettings } from "@/lib/data";
+import { categoryName } from "@/lib/localize";
+
+export function Footer({ categories, settings }: { categories: Category[]; settings: SiteSettings }) {
+  const { lang, t } = useLang();
+  const year = new Date().getFullYear();
+  const services = [
+    { icon: "🚚", title: t("svcDelivery"), sub: t("svcDeliverySub") },
+    { icon: "💵", title: t("svcPayment"), sub: t("svcPaymentSub") },
+    { icon: "🛡️", title: t("svcQuality"), sub: t("svcQualitySub") },
+    { icon: "📞", title: t("svcSupport"), sub: settings.phone },
+  ];
+
   return (
     <footer className="mt-12 bg-[#333e48] text-gray-300">
       {/* Services strip */}
       <div className="bg-white border-t border-gray-200">
         <div className="mx-auto max-w-[1326px] px-4 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          {[
-            { icon: "🚚", title: "Livraison rapide", sub: "Partout à Tripoli & environs" },
-            { icon: "💵", title: "Paiement à la livraison", sub: "Espèces ou virement" },
-            { icon: "🛡️", title: "Garantie qualité", sub: "Produits certifiés" },
-            { icon: "📞", title: "Support 6j/7", sub: "+218 21 444 55 66" },
-          ].map((s) => (
+          {services.map((s) => (
             <div key={s.title} className="flex flex-col items-center gap-1">
               <span className="text-3xl">{s.icon}</span>
               <span className="font-bold text-gray-900 text-sm">{s.title}</span>
-              <span className="text-xs text-gray-500">{s.sub}</span>
+              <span className="text-xs text-gray-500" dir="ltr">{s.sub}</span>
             </div>
           ))}
         </div>
@@ -25,18 +34,16 @@ export function Footer({ categories }: { categories: Category[] }) {
       {/* Newsletter */}
       <div className="bg-[#e31e25]">
         <div className="mx-auto max-w-[1326px] px-4 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-white font-bold text-lg">
-            📧 Inscrivez-vous à notre newsletter — recevez nos promos chantier !
-          </div>
+          <div className="text-white font-bold text-lg">{t("newsletterText")}</div>
           <form className="flex w-full md:w-auto">
             <input
               type="email"
               required
-              placeholder="Votre adresse e-mail"
-              className="h-11 px-4 rounded-l-md bg-white text-sm text-gray-800 outline-none w-full md:w-72"
+              placeholder={t("emailPlaceholder")}
+              className="h-11 px-4 rounded-s-md bg-white text-sm text-gray-800 outline-none w-full md:w-72"
             />
-            <button className="h-11 px-5 rounded-r-md bg-black text-white text-sm font-semibold hover:bg-gray-900 transition-colors">
-              S&apos;inscrire
+            <button className="h-11 px-5 rounded-e-md bg-black text-white text-sm font-semibold hover:bg-gray-900 transition-colors">
+              {t("subscribe")}
             </button>
           </form>
         </div>
@@ -45,54 +52,48 @@ export function Footer({ categories }: { categories: Category[] }) {
       {/* Columns */}
       <div className="mx-auto max-w-[1326px] px-4 py-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
         <div>
-          <span className="bg-[#e31e25] text-white font-extrabold italic text-xl px-3 py-1 rounded-md border-2 border-white inline-block">
-            Ma𝕋EK
+          <span className="bg-[#e31e25] text-white font-extrabold text-xl px-3 py-1 rounded-md border-2 border-white inline-block" dir="ltr">
+            {settings.shopName}
           </span>
-          <p className="mt-4 text-gray-400 leading-relaxed">
-            Matériaux de construction & outillage professionnel à Tripoli, Libye.
-            Le meilleur rapport qualité/prix pour vos chantiers.
-          </p>
-          <p className="mt-3 text-gray-400" dir="rtl">
-            مواد البناء والعدد — طرابلس، ليبيا
-          </p>
+          <p className="mt-4 text-gray-400 leading-relaxed">{t("footerDesc")}</p>
         </div>
         <div>
-          <h4 className="text-white font-bold mb-4 uppercase text-xs tracking-wider">Nos Rayons</h4>
+          <h4 className="text-white font-bold mb-4 uppercase text-xs tracking-wider">{t("colDepartments")}</h4>
           <ul className="space-y-2">
             {categories.slice(0, 6).map((c) => (
               <li key={c.id}>
                 <Link href={`/categorie/${c.slug}`} className="hover:text-white transition-colors">
-                  {c.name}
+                  {categoryName(c, lang)}
                 </Link>
               </li>
             ))}
           </ul>
         </div>
         <div>
-          <h4 className="text-white font-bold mb-4 uppercase text-xs tracking-wider">Informations</h4>
+          <h4 className="text-white font-bold mb-4 uppercase text-xs tracking-wider">{t("colInfo")}</h4>
           <ul className="space-y-2">
-            <li><Link href="/" className="hover:text-white transition-colors">Qui sommes-nous ?</Link></li>
-            <li><Link href="/" className="hover:text-white transition-colors">Livraison & retours</Link></li>
-            <li><Link href="/" className="hover:text-white transition-colors">Conditions générales</Link></li>
-            <li><Link href="/" className="hover:text-white transition-colors">Service entreprise</Link></li>
-            <li><Link href="/" className="hover:text-white transition-colors">Matek Recrute</Link></li>
+            <li><Link href="/" className="hover:text-white transition-colors">{t("aboutUs")}</Link></li>
+            <li><Link href="/" className="hover:text-white transition-colors">{t("deliveryReturns")}</Link></li>
+            <li><Link href="/" className="hover:text-white transition-colors">{t("terms")}</Link></li>
+            <li><Link href="/" className="hover:text-white transition-colors">{t("businessService")}</Link></li>
+            <li><Link href="/" className="hover:text-white transition-colors">{t("recruit")}</Link></li>
           </ul>
         </div>
         <div>
-          <h4 className="text-white font-bold mb-4 uppercase text-xs tracking-wider">Contact</h4>
+          <h4 className="text-white font-bold mb-4 uppercase text-xs tracking-wider">{t("colContact")}</h4>
           <ul className="space-y-2 text-gray-400">
-            <li>📍 Route de l&apos;Aéroport, Souk Al Joumaa, Tripoli</li>
-            <li>☎ +218 21 444 55 66</li>
-            <li>✉ contact@matek.ly</li>
-            <li>🕐 Sam – Jeu : 8h00 – 19h00</li>
+            <li>📍 {settings.address}</li>
+            <li dir="ltr">☎ {settings.phone}</li>
+            {settings.email && <li>✉ {settings.email}</li>}
+            <li>🕐 {t("hours")}</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-gray-600/50">
         <div className="mx-auto max-w-[1326px] px-4 py-4 text-xs text-gray-400 flex flex-col md:flex-row justify-between gap-2">
-          <span>© 2026 MaTEK — Matériaux & Outillage, Tripoli, Libye. Tous droits réservés.</span>
-          <span>Paiement : 💵 Espèces · 🏦 Virement · 💳 Carte locale</span>
+          <span>{t("copyright", { year, shop: settings.shopName })}</span>
+          <span>{t("payments")}</span>
         </div>
       </div>
     </footer>

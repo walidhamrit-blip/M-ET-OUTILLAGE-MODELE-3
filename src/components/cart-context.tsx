@@ -12,22 +12,26 @@ import {
 
 export type CartItem = {
   id: number;
-  name: string;
   slug: string;
+  name: string;
+  nameAr?: string;
+  nameEn?: string;
   price: number;
   image: string;
   qty: number;
 };
 
+export type CartItemInput = Omit<CartItem, "qty">;
+
 type CartContextType = {
   items: CartItem[];
   count: number;
   total: number;
-  addItem: (item: Omit<CartItem, "qty">) => void;
+  addItem: (item: CartItemInput) => void;
   removeItem: (id: number) => void;
   setQty: (id: number, qty: number) => void;
   clear: () => void;
-  lastAdded: string | null;
+  lastAdded: CartItemInput | null;
 };
 
 const CartContext = createContext<CartContextType | null>(null);
@@ -37,7 +41,7 @@ const STORAGE_KEY = "matek-cart";
 export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>([]);
   const [loaded, setLoaded] = useState(false);
-  const [lastAdded, setLastAdded] = useState<string | null>(null);
+  const [lastAdded, setLastAdded] = useState<CartItemInput | null>(null);
 
   useEffect(() => {
     try {
@@ -57,7 +61,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
     return () => clearTimeout(t);
   }, [lastAdded]);
 
-  const addItem = useCallback((item: Omit<CartItem, "qty">) => {
+  const addItem = useCallback((item: CartItemInput) => {
     setItems((prev) => {
       const found = prev.find((i) => i.id === item.id);
       if (found) {
@@ -65,7 +69,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       }
       return [...prev, { ...item, qty: 1 }];
     });
-    setLastAdded(item.name);
+    setLastAdded(item);
   }, []);
 
   const removeItem = useCallback((id: number) => {
