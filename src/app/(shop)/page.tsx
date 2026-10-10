@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { HeroCarousel } from "@/components/hero-carousel";
 import { ProductCard } from "@/components/product-card";
+import { ProductCarousel } from "@/components/product-carousel";
 import { getAllProducts, getCategories, getHeroSlides } from "@/lib/data";
 import { getServerT } from "@/lib/lang";
 import { categoryName } from "@/lib/localize";
@@ -55,14 +56,10 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Top ventes */}
+      {/* Top ventes — carrousel horizontal façon Mytek */}
       <section className="mx-auto max-w-[1326px] px-4 mt-10">
         <SectionTitle title={t("topSales")} href="/recherche?q=" seeAll={t("seeAll")} />
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          {topSales.map((p) => (
-            <ProductCard key={p.id} product={p} />
-          ))}
-        </div>
+        <ProductCarousel products={topSales} />
       </section>
 
       {/* Red CTA strip */}
@@ -83,14 +80,10 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Promotions */}
+      {/* Promotions — carrousel horizontal façon Mytek */}
       <section className="mx-auto max-w-[1326px] px-4 mt-10">
         <SectionTitle title={t("promotions")} href="/recherche?q=" seeAll={t("seeAll")} />
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-          {promos.map((p) => (
-            <ProductCard key={p.id} product={p} />
-          ))}
-        </div>
+        <ProductCarousel products={promos} />
       </section>
 
       {/* All products */}

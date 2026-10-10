@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AddToCartButton } from "@/components/add-to-cart-button";
 import { ProductCard } from "@/components/product-card";
-import { formatPrice } from "@/lib/format";
+import { priceAmount } from "@/lib/format";
 import { getCategories, getProductBySlug, getProductsByCategory, getSettings } from "@/lib/data";
 import { getServerT } from "@/lib/lang";
 import { categoryName, productDescription, productName } from "@/lib/localize";
@@ -65,9 +65,18 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           </div>
 
           <div className="mt-4 flex items-end gap-3">
-            <span className="text-[#e31e25] font-extrabold text-3xl" dir="ltr">{formatPrice(product.price)}</span>
+            <span className="text-[#e31e25] font-extrabold text-3xl leading-none" dir="ltr">
+              {priceAmount(product.price)}
+              <span className="text-base ms-1">DL</span>
+            </span>
             {product.oldPrice && (
-              <span className="text-gray-400 text-lg line-through" dir="ltr">{formatPrice(product.oldPrice)}</span>
+              <span
+                className="text-gray-900 text-lg font-semibold line-through decoration-[#e31e25] decoration-2"
+                dir="ltr"
+              >
+                {priceAmount(product.oldPrice)}
+                <span className="text-xs ms-1">DL</span>
+              </span>
             )}
             {product.oldPrice && (
               <span className="bg-[#ffe600] text-black text-xs font-bold px-2 py-1" dir="ltr">
