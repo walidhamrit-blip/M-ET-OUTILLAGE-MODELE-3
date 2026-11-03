@@ -95,6 +95,17 @@ export function Footer({ categories, settings }: { categories: Category[]; setti
           <span>{t("copyright", { year, shop: settings.shopName })}</span>
           <span>{t("payments")}</span>
         </div>
+        {/* Crédit agence : lien visible, sans script ni paramètre de suivi. */}
+        <div className="mx-auto max-w-[1326px] px-4 pb-4 text-xs text-gray-400">
+          <a
+            href="https://nokhba.net.ly/badge"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className="hover:text-white underline underline-offset-2 transition-colors"
+          >
+            {t("websiteCredit")}
+          </a>
+        </div>
       </div>
     </footer>
   );
